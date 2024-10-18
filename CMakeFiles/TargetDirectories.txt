@@ -1,0 +1,6 @@
+/root/p1/CMakeFiles/CGAL_Qt5_moc_and_resources.dir
+/root/p1/CMakeFiles/ex.dir
+/root/p1/CMakeFiles/edit_cache.dir
+/root/p1/CMakeFiles/rebuild_cache.dir
+/root/p1/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir
+/root/p1/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir
