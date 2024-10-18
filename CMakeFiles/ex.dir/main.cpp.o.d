@@ -1,4 +1,4 @@
-CMakeFiles/ex.dir/main.cpp.o: /root/p1/main.cpp \
+CMakeFiles/ex.dir/main.cpp.o: /root/project1/ProjectAlgorithms1/main.cpp \
  /usr/include/stdc-predef.h \
  /usr/local/include/CGAL/Exact_predicates_inexact_constructions_kernel.h \
  /usr/local/include/CGAL/Simple_cartesian.h \
@@ -2565,7 +2565,7 @@ CMakeFiles/ex.dir/main.cpp.o: /root/p1/main.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
- /root/p1/ui_ImageInterface.h \
+ /root/project1/ProjectAlgorithms1/ui_ImageInterface.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
@@ -2910,4 +2910,4 @@ CMakeFiles/ex.dir/main.cpp.o: /root/p1/main.cpp \
  /usr/include/boost/property_tree/json_parser/detail/wide_encoding.hpp \
  /usr/include/boost/property_tree/json_parser/detail/standard_callbacks.hpp \
  /usr/include/boost/property_tree/json_parser/detail/write.hpp \
- /root/p1/CCDT.h
+ /root/project1/ProjectAlgorithms1/CCDT.h

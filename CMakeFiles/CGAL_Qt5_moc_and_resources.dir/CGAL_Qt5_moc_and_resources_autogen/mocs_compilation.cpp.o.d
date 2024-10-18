@@ -1,7 +1,7 @@
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o: \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_DemosMainWindow.cpp \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_DemosMainWindow.cpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,7 +116,7 @@ CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/moc
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../usr/local/include/CGAL/Qt/DemosMainWindow.h \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../../usr/local/include/CGAL/Qt/DemosMainWindow.h \
  /usr/local/include/CGAL/license/GraphicsView.h \
  /usr/local/include/CGAL/config.h /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
@@ -1351,8 +1351,8 @@ CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/moc
  /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qglshaderprogram.h \
  /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qtopenglversion.h \
  /usr/local/include/CGAL/Qt/DemosMainWindow.h \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_GraphicsItem.cpp \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../usr/local/include/CGAL/Qt/GraphicsItem.h \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_GraphicsItem.cpp \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../../usr/local/include/CGAL/Qt/GraphicsItem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
  /usr/local/include/CGAL/Object.h /usr/local/include/CGAL/assertions.h \
  /usr/local/include/CGAL/Uncertain.h /usr/local/include/CGAL/enum.h \
@@ -1654,12 +1654,12 @@ CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/moc
  /usr/include/boost/variant/bad_visit.hpp /usr/include/boost/any.hpp \
  /usr/include/boost/any/bad_any_cast.hpp /usr/include/boost/any/fwd.hpp \
  /usr/include/boost/any/detail/placeholder.hpp \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_GraphicsViewInput.cpp \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../usr/local/include/CGAL/Qt/GraphicsViewInput.h \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_GraphicsViewNavigation.cpp \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../usr/local/include/CGAL/Qt/GraphicsViewNavigation.h \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_camera.cpp \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../usr/local/include/CGAL/Qt/camera.h \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_GraphicsViewInput.cpp \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../../usr/local/include/CGAL/Qt/GraphicsViewInput.h \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_GraphicsViewNavigation.cpp \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../../usr/local/include/CGAL/Qt/GraphicsViewNavigation.h \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_camera.cpp \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../../usr/local/include/CGAL/Qt/camera.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap \
  /usr/local/include/CGAL/Qt/vec.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtGlobal \
@@ -1669,13 +1669,13 @@ CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/moc
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglfunctions_2_1.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLVersionFunctions \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLFunctions \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_frame.cpp \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../usr/local/include/CGAL/Qt/frame.h \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_image_interface.cpp \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../usr/local/include/CGAL/Qt/image_interface.h \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_frame.cpp \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../../usr/local/include/CGAL/Qt/frame.h \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_image_interface.cpp \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../../usr/local/include/CGAL/Qt/image_interface.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
- /root/p1/ui_ImageInterface.h \
+ /root/project1/ProjectAlgorithms1/ui_ImageInterface.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
@@ -1688,21 +1688,21 @@ CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/moc
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_keyFrameInterpolator.cpp \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../usr/local/include/CGAL/Qt/keyFrameInterpolator.h \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_keyFrameInterpolator.cpp \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../../usr/local/include/CGAL/Qt/keyFrameInterpolator.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_manipulatedCameraFrame.cpp \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../usr/local/include/CGAL/Qt/manipulatedCameraFrame.h \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_manipulatedCameraFrame.cpp \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../../usr/local/include/CGAL/Qt/manipulatedCameraFrame.h \
  /usr/local/include/CGAL/Qt/manipulatedFrame.h \
  /usr/local/include/CGAL/Qt/frame.h /usr/local/include/CGAL/Qt/camera.h \
  /usr/local/include/CGAL/Qt/mouseGrabber.h \
  /usr/local/include/CGAL/Qt/viewer_actions.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QElapsedTimer \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_manipulatedFrame.cpp \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../usr/local/include/CGAL/Qt/manipulatedFrame.h \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_qglviewer.cpp \
- /root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../usr/local/include/CGAL/Qt/qglviewer.h \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_manipulatedFrame.cpp \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../../usr/local/include/CGAL/Qt/manipulatedFrame.h \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_qglviewer.cpp \
+ /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/../../../../../usr/local/include/CGAL/Qt/qglviewer.h \
  /usr/local/include/CGAL/number_type_config.h \
  /usr/local/include/CGAL/Qt/keyFrameInterpolator.h \
  /usr/local/include/CGAL/Qt/manipulatedCameraFrame.h \

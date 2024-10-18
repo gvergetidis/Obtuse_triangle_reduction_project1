@@ -1,5 +1,5 @@
-/root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_GraphicsViewInput.cpp: /usr/local/include/CGAL/Qt/GraphicsViewInput.h \
-  /root/p1/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
+/root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_GraphicsViewInput.cpp: /usr/local/include/CGAL/Qt/GraphicsViewInput.h \
+  /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

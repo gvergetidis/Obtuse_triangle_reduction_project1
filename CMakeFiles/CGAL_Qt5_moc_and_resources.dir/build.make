@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/p1
+CMAKE_SOURCE_DIR = /root/project1/ProjectAlgorithms1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/p1
+CMAKE_BINARY_DIR = /root/project1/ProjectAlgorithms1
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CGAL_Qt5_moc_and_resources.dir/depend.make
@@ -70,8 +70,8 @@ include CMakeFiles/CGAL_Qt5_moc_and_resources.dir/progress.make
 include CMakeFiles/CGAL_Qt5_moc_and_resources.dir/flags.make
 
 ui_ImageInterface.h: /usr/local/include/CGAL/Qt/ImageInterface.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/p1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_ImageInterface.h"
-	/usr/lib/qt5/bin/uic -o /root/p1/ui_ImageInterface.h /usr/local/include/CGAL/Qt/ImageInterface.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_ImageInterface.h"
+	/usr/lib/qt5/bin/uic -o /root/project1/ProjectAlgorithms1/ui_ImageInterface.h /usr/local/include/CGAL/Qt/ImageInterface.ui
 
 qrc_CGAL.cpp: resources/CGAL.qrc
 qrc_CGAL.cpp: resources/about_CGAL.html
@@ -79,107 +79,107 @@ qrc_CGAL.cpp: resources/cgal_logo_ipe_2013.png
 qrc_CGAL.cpp: resources/cgal_logo_ipe_2013.png
 qrc_CGAL.cpp: resources/cgal_logo.xpm
 qrc_CGAL.cpp: resources/CGAL.qrc.depends
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/p1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating qrc_CGAL.cpp"
-	/usr/lib/qt5/bin/rcc --name CGAL --output /root/p1/qrc_CGAL.cpp /root/p1/resources/CGAL.qrc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating qrc_CGAL.cpp"
+	/usr/lib/qt5/bin/rcc --name CGAL --output /root/project1/ProjectAlgorithms1/qrc_CGAL.cpp /root/project1/ProjectAlgorithms1/resources/CGAL.qrc
 
 qrc_Input.cpp: icons/Input.qrc
 qrc_Input.cpp: icons/inputPoint.png
 qrc_Input.cpp: icons/fit-page-32.png
 qrc_Input.cpp: icons/inputPolyline.png
 qrc_Input.cpp: icons/Input.qrc.depends
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/p1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating qrc_Input.cpp"
-	/usr/lib/qt5/bin/rcc --name Input --output /root/p1/qrc_Input.cpp /root/p1/icons/Input.qrc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating qrc_Input.cpp"
+	/usr/lib/qt5/bin/rcc --name Input --output /root/project1/ProjectAlgorithms1/qrc_Input.cpp /root/project1/ProjectAlgorithms1/icons/Input.qrc
 
 qrc_File.cpp: icons/File.qrc
 qrc_File.cpp: icons/fileNew.png
 qrc_File.cpp: icons/fileOpen.png
 qrc_File.cpp: icons/fileSave.png
 qrc_File.cpp: icons/File.qrc.depends
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/p1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating qrc_File.cpp"
-	/usr/lib/qt5/bin/rcc --name File --output /root/p1/qrc_File.cpp /root/p1/icons/File.qrc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating qrc_File.cpp"
+	/usr/lib/qt5/bin/rcc --name File --output /root/project1/ProjectAlgorithms1/qrc_File.cpp /root/project1/ProjectAlgorithms1/icons/File.qrc
 
 qrc_Triangulation_2.cpp: icons/Triangulation_2.qrc
 qrc_Triangulation_2.cpp: icons/Delaunay_triangulation_2.png
 qrc_Triangulation_2.cpp: icons/Voronoi_diagram_2.png
 qrc_Triangulation_2.cpp: icons/Triangulation_2.qrc.depends
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/p1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating qrc_Triangulation_2.cpp"
-	/usr/lib/qt5/bin/rcc --name Triangulation_2 --output /root/p1/qrc_Triangulation_2.cpp /root/p1/icons/Triangulation_2.qrc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating qrc_Triangulation_2.cpp"
+	/usr/lib/qt5/bin/rcc --name Triangulation_2 --output /root/project1/ProjectAlgorithms1/qrc_Triangulation_2.cpp /root/project1/ProjectAlgorithms1/icons/Triangulation_2.qrc
 
 CGAL_Qt5_moc_and_resources_autogen/timestamp: /usr/lib/qt5/bin/moc
 CGAL_Qt5_moc_and_resources_autogen/timestamp: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/p1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Automatic MOC for target CGAL_Qt5_moc_and_resources"
-	/usr/bin/cmake -E cmake_autogen /root/p1/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenInfo.json ""
-	/usr/bin/cmake -E touch /root/p1/CGAL_Qt5_moc_and_resources_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Automatic MOC for target CGAL_Qt5_moc_and_resources"
+	/usr/bin/cmake -E cmake_autogen /root/project1/ProjectAlgorithms1/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E touch /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/timestamp
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/flags.make
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o: CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/p1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o -MF CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o -c /root/p1/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o -MF CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o -c /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/p1/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp > CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp > CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/p1/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/flags.make
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o: qrc_CGAL.cpp
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/p1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o -MF CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o.d -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o -c /root/p1/qrc_CGAL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o -MF CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o.d -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o -c /root/project1/ProjectAlgorithms1/qrc_CGAL.cpp
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/p1/qrc_CGAL.cpp > CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project1/ProjectAlgorithms1/qrc_CGAL.cpp > CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.i
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/p1/qrc_CGAL.cpp -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project1/ProjectAlgorithms1/qrc_CGAL.cpp -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.s
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.o: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/flags.make
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.o: qrc_Input.cpp
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.o: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/p1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.o -MF CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.o.d -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.o -c /root/p1/qrc_Input.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.o -MF CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.o.d -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.o -c /root/project1/ProjectAlgorithms1/qrc_Input.cpp
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/p1/qrc_Input.cpp > CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project1/ProjectAlgorithms1/qrc_Input.cpp > CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.i
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/p1/qrc_Input.cpp -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project1/ProjectAlgorithms1/qrc_Input.cpp -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.s
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/flags.make
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o: qrc_File.cpp
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/p1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o -MF CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o.d -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o -c /root/p1/qrc_File.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o -MF CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o.d -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o -c /root/project1/ProjectAlgorithms1/qrc_File.cpp
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/p1/qrc_File.cpp > CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project1/ProjectAlgorithms1/qrc_File.cpp > CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.i
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/p1/qrc_File.cpp -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project1/ProjectAlgorithms1/qrc_File.cpp -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.s
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.o: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/flags.make
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.o: qrc_Triangulation_2.cpp
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.o: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/p1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.o -MF CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.o.d -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.o -c /root/p1/qrc_Triangulation_2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.o -MF CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.o.d -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.o -c /root/project1/ProjectAlgorithms1/qrc_Triangulation_2.cpp
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/p1/qrc_Triangulation_2.cpp > CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project1/ProjectAlgorithms1/qrc_Triangulation_2.cpp > CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.i
 
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/p1/qrc_Triangulation_2.cpp -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project1/ProjectAlgorithms1/qrc_Triangulation_2.cpp -o CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.s
 
 # Object files for target CGAL_Qt5_moc_and_resources
 CGAL_Qt5_moc_and_resources_OBJECTS = \
@@ -199,7 +199,7 @@ libCGAL_Qt5_moc_and_resources.a: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_F
 libCGAL_Qt5_moc_and_resources.a: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.o
 libCGAL_Qt5_moc_and_resources.a: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/build.make
 libCGAL_Qt5_moc_and_resources.a: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/p1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libCGAL_Qt5_moc_and_resources.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libCGAL_Qt5_moc_and_resources.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/CGAL_Qt5_moc_and_resources.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CGAL_Qt5_moc_and_resources.dir/link.txt --verbose=$(VERBOSE)
 
@@ -217,6 +217,6 @@ CMakeFiles/CGAL_Qt5_moc_and_resources.dir/depend: qrc_File.cpp
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/depend: qrc_Input.cpp
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/depend: qrc_Triangulation_2.cpp
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/depend: ui_ImageInterface.h
-	cd /root/p1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/p1 /root/p1 /root/p1 /root/p1 /root/p1/CMakeFiles/CGAL_Qt5_moc_and_resources.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /root/project1/ProjectAlgorithms1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1/CMakeFiles/CGAL_Qt5_moc_and_resources.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/CGAL_Qt5_moc_and_resources.dir/depend
 

@@ -1,5 +1,5 @@
-/root/p1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_manipulatedFrame.cpp: /usr/local/include/CGAL/Qt/manipulatedFrame.h \
-  /root/p1/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
+/root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_manipulatedFrame.cpp: /usr/local/include/CGAL/Qt/manipulatedFrame.h \
+  /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
   /usr/include/GL/gl.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \

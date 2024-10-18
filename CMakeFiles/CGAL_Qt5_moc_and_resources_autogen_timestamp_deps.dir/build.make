@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/p1
+CMAKE_SOURCE_DIR = /root/project1/ProjectAlgorithms1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/p1
+CMAKE_BINARY_DIR = /root/project1/ProjectAlgorithms1
 
 # Utility rule file for CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.
 
@@ -67,8 +67,8 @@ include CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/compile
 include CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
-CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so.5.15.13
 CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
+CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so.5.15.13
 
 CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps
 CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/depend:
-	cd /root/p1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/p1 /root/p1 /root/p1 /root/p1 /root/p1/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /root/project1/ProjectAlgorithms1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/depend
 

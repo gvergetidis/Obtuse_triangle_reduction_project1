@@ -1066,20 +1066,15 @@ CGAL_Qt5_moc_and_resources_autogen/timestamp: CGAL_Qt5_moc_and_resources_autogen
   /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qtopenglversion.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QColorDialog \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCommonStyle \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDesktopWidget \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDoubleSpinBox \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFileDialog \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsRectItem \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsView \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
@@ -1090,12 +1085,9 @@ CGAL_Qt5_moc_and_resources_autogen/timestamp: CGAL_Qt5_moc_and_resources_autogen
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollBar \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollerProperties \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStatusBar \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTabWidget \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextEdit \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QtWidgets \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QtWidgetsDepends \
@@ -1363,27 +1355,104 @@ CGAL_Qt5_moc_and_resources_autogen/timestamp: CGAL_Qt5_moc_and_resources_autogen
   /usr/local/lib/cmake/CGAL/FindGMP.cmake \
   /usr/local/lib/cmake/CGAL/FindGMPXX.cmake \
   /usr/local/lib/cmake/CGAL/FindMPFR.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
+  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
+  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeParseArguments.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
+  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindBoost.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindThreads.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
+  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
+  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -3049,8 +3118,6 @@ qrc_Input.cpp:
 
 /usr/local/include/CGAL/enum.h:
 
-/usr/local/include/CGAL/enable_warnings.h:
-
 /usr/local/include/CGAL/Profile_counter.h:
 
 /usr/local/include/CGAL/Origin.h:
@@ -3058,6 +3125,10 @@ qrc_Input.cpp:
 /usr/local/include/CGAL/Object.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDoubleSpinBox:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h:
 
@@ -3175,10 +3246,6 @@ qrc_CGAL.cpp:
 
 /usr/include/boost/mpl/size_t_fwd.hpp:
 
-/usr/include/boost/type_traits/has_nothrow_copy.hpp:
-
-/usr/include/boost/mpl/size_fwd.hpp:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
 
 /usr/include/boost/mpl/quote.hpp:
@@ -3288,8 +3355,6 @@ qrc_CGAL.cpp:
 /usr/include/boost/mpl/begin_end_fwd.hpp:
 
 /usr/include/boost/mpl/begin_end.hpp:
-
-/usr/include/boost/mpl/back_inserter.hpp:
 
 /usr/include/boost/mpl/aux_/yes_no.hpp:
 
@@ -3417,8 +3482,6 @@ qrc_CGAL.cpp:
 
 /usr/include/boost/mpl/aux_/config/adl.hpp:
 
-/usr/include/boost/mpl/aux_/comparison_op.hpp:
-
 /usr/include/boost/mpl/aux_/common_name_wknd.hpp:
 
 /usr/include/boost/variant/variant_fwd.hpp:
@@ -3493,6 +3556,8 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp:
 
 /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake:
 
+/usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake:
+
 /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:
 
 /usr/share/cmake-3.28/Modules/FindThreads.cmake:
@@ -3503,9 +3568,63 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp:
 
 /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:
 
+/usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake:
+
+/usr/include/boost/mpl/aux_/comparison_op.hpp:
+
+/usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
+
 /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake:
 
+/usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake:
+
+/usr/include/boost/mpl/back_inserter.hpp:
+
+/usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake:
+
 /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake:
 
 /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:
 
@@ -3513,7 +3632,21 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp:
 
 /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:
 
+/usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake:
+
+/usr/local/include/CGAL/enable_warnings.h:
+
+/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:
+
 /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake:
 
 /usr/share/cmake-3.28/Modules/CMakeParseArguments.cmake:
 
@@ -3521,11 +3654,25 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp:
 
 /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake:
 
+/usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:
+
 /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake:
 
 /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake:
 
+/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp:
+
+/usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in:
+
 /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake:
+
+/usr/include/boost/type_traits/has_nothrow_copy.hpp:
+
+/usr/include/boost/mpl/size_fwd.hpp:
+
+/usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in:
 
 /usr/local/lib/cmake/CGAL/FindGMPXX.cmake:
 
@@ -3561,7 +3708,13 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp:
 
 /usr/local/lib/cmake/CGAL/CGALConfigBuildVersion.cmake:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout:
+
+/usr/local/include/CGAL/version.h:
+
 /usr/include/boost/variant/detail/substitute.hpp:
+
+/usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake:
 
 /usr/local/include/CGAL/number_type_config.h:
 
@@ -3675,6 +3828,8 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp:
 
 /usr/include/boost/mpl/aux_/advance_forward.hpp:
 
+/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake:
@@ -3684,6 +3839,8 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake:
 
@@ -3708,6 +3865,8 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/boost_system-1.83.0/libboost_system-variant-shared.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake:
 
@@ -3735,6 +3894,12 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsversion.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox:
+
+/usr/include/boost/type_index/type_index_facade.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h:
+
 /usr/include/c++/13/pstl/pstl_config.h:
 
 /usr/include/c++/13/iomanip:
@@ -3742,6 +3907,8 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidget.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.83.0/boost_filesystem-config.cmake:
 
@@ -3784,6 +3951,8 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizegrip.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qshortcut.h:
+
+/usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollerproperties.h:
 
@@ -3897,10 +4066,6 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcompleter.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcolumnview.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcolordialog.h:
-
 CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_GraphicsViewInput.cpp:
 
 /usr/include/boost/smart_ptr/detail/sp_counted_base.hpp:
@@ -3981,10 +4146,6 @@ CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_GraphicsViewInput.cpp:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcommandlinkbutton.h:
-
-/usr/include/c++/13/bits/stl_numeric.h:
-
 /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
@@ -4059,6 +4220,10 @@ CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_GraphicsViewNavigation.cpp:
 
 /usr/include/c++/13/bits/stringfwd.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout:
+
+/usr/include/boost/predef/compiler/sgi_mipspro.h:
+
 /usr/include/c++/13/bits/iterator_concepts.h:
 
 /usr/include/boost/mpl/apply_wrap.hpp:
@@ -4072,6 +4237,8 @@ CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_GraphicsViewNavigation.cpp:
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant:
 
 /usr/include/boost/config/detail/cxx_composite.hpp:
+
+/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QPoint:
 
@@ -4219,6 +4386,8 @@ CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_frame.cpp:
 
 /usr/include/c++/13/bits/basic_string.tcc:
 
+/usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
+
 /usr/local/include/CGAL/version_macros.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h:
@@ -4265,6 +4434,8 @@ CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_frame.cpp:
 
 /usr/include/boost/predef/make.h:
 
+/usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
+
 /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp:
 
 /usr/include/c++/13/cstdint:
@@ -4304,6 +4475,8 @@ CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_frame.cpp:
 /usr/include/boost/type_traits/add_pointer.hpp:
 
 /usr/include/boost/mpl/eval_if.hpp:
+
+/usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
 
 /usr/include/boost/type.hpp:
 
@@ -4364,6 +4537,12 @@ CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_manipulatedFrame.cpp:
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicslayout.h:
 
 /usr/include/c++/13/tr1/beta_function.tcc:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout:
+
+/usr/include/boost/mpl/push_front.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h:
 
 /usr/include/boost/smart_ptr/detail/operator_bool.hpp:
 
@@ -4455,6 +4634,8 @@ CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_manipulatedFrame.cpp:
 
 /usr/include/boost/none.hpp:
 
+/usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
 
 /usr/include/boost/preprocessor/facilities/overload.hpp:
@@ -4529,6 +4710,8 @@ ui_ImageInterface.h:
 
 /usr/include/boost/predef/platform/windows_uwp.h:
 
+/usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake:
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:
 
 /usr/include/boost/mpl/aux_/config/has_xxx.hpp:
@@ -4595,12 +4778,6 @@ ui_ImageInterface.h:
 
 /usr/include/boost/optional/optional_fwd.hpp:
 
-/usr/include/boost/type_index/type_index_facade.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox:
-
 /usr/include/boost/type_traits/is_arithmetic.hpp:
 
 /usr/include/boost/core/allocator_access.hpp:
@@ -4620,6 +4797,8 @@ ui_ImageInterface.h:
 /usr/include/c++/13/cwctype:
 
 /usr/include/boost/preprocessor/detail/check.hpp:
+
+/usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake:
 
 /usr/include/boost/predef/compiler/kai.h:
 
@@ -4664,6 +4843,8 @@ ui_ImageInterface.h:
 /usr/include/c++/13/bits/erase_if.h:
 
 /usr/include/boost/predef/architecture/x86/64.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
 
 /usr/include/boost/type_traits/type_identity.hpp:
 
@@ -4720,10 +4901,6 @@ ui_ImageInterface.h:
 /usr/include/boost/move/core.hpp:
 
 /usr/include/boost/predef/os/amigaos.h:
-
-/usr/local/include/CGAL/version.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout:
 
 /usr/include/boost/limits.hpp:
 
@@ -4887,6 +5064,8 @@ CMakeLists.txt:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
+/usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake:
+
 /usr/include/boost/predef/architecture/m68k.h:
 
 /usr/include/boost/mpl/always.hpp:
@@ -4959,9 +5138,9 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcolormap.h:
-
 /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcolormap.h:
 
 /usr/include/c++/13/bits/enable_special_members.h:
 
@@ -5050,6 +5229,8 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 /usr/include/boost/preprocessor/logical/bool.hpp:
 
 /usr/include/boost/format/feed_args.hpp:
+
+/usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QMatrix3x3:
 
@@ -5175,6 +5356,8 @@ CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h:
 
 /usr/include/boost/preprocessor/detail/limits/auto_rec_256.hpp:
 
+/usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake:
+
 /usr/include/c++/13/bits/codecvt.h:
 
 /usr/include/boost/predef/hardware/simd.h:
@@ -5197,12 +5380,6 @@ CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h:
 
 /usr/include/boost/predef/platform/windows_system.h:
 
-/usr/include/boost/mpl/push_front.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout:
-
 /usr/include/boost/core/detail/sp_thread_pause.hpp:
 
 /usr/include/boost/predef/hardware/simd/x86_amd.h:
@@ -5214,6 +5391,8 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/include/boost/mpl/and.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcborarray.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h:
 
@@ -5259,15 +5438,11 @@ icons/Triangulation_2.qrc:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qreadwritelock.h:
 
-/usr/include/boost/variant/recursive_wrapper_fwd.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcheckbox.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qglyphrun.h:
-
 /usr/include/boost/predef/language/stdcpp.h:
 
 /usr/include/boost/type_traits/copy_cv_ref.hpp:
+
+/usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake:
 
 /usr/include/boost/predef/compiler/gcc_xml.h:
 
@@ -5308,6 +5483,10 @@ icons/Triangulation_2.qrc:
 /usr/include/boost/predef/platform/ios.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene:
+
+/usr/include/c++/13/bits/stl_numeric.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcommandlinkbutton.h:
 
 /usr/include/boost/mpl/aux_/inserter_algorithm.hpp:
 
@@ -5362,6 +5541,12 @@ icons/Triangulation_2.qrc:
 /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake:
 
 /usr/include/boost/predef/os/bsd/bsdi.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h:
+
+/usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer:
 
@@ -5513,6 +5698,8 @@ icons/Triangulation_2.qrc:
 
 /usr/include/boost/preprocessor/control/iif.hpp:
 
+/usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake:
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbitarray.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h:
@@ -5550,6 +5737,8 @@ icons/Triangulation_2.qrc:
 /usr/include/boost/mpl/aux_/config/compiler.hpp:
 
 /usr/include/c++/13/string_view:
+
+/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtemporarydir.h:
 
@@ -5623,6 +5812,8 @@ icons/Triangulation_2.qrc:
 
 /usr/include/wctype.h:
 
+/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:
+
 /usr/include/c++/13/compare:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qurlquery.h:
@@ -5687,6 +5878,8 @@ icons/Triangulation_2.qrc:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
+/usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake:
+
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
 /usr/include/libintl.h:
@@ -5714,6 +5907,8 @@ icons/Triangulation_2.qrc:
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
@@ -5761,6 +5956,8 @@ icons/Triangulation_2.qrc:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
+/usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake:
+
 /usr/include/c++/13/tr1/legendre_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
@@ -5781,11 +5978,15 @@ icons/Triangulation_2.qrc:
 
 /usr/include/boost/mpl/list/aux_/include_preprocessed.hpp:
 
+/usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake:
+
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h:
 
@@ -5899,6 +6100,10 @@ icons/Triangulation_2.qrc:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstracteventdispatcher.h:
 
+/usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake:
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h:
 
 /usr/include/boost/mpl/integral_c_fwd.hpp:
@@ -5918,12 +6123,6 @@ icons/Triangulation_2.qrc:
 /usr/include/c++/13/typeinfo:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qstatictext.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h:
-
-/usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h:
 
@@ -6003,6 +6202,8 @@ icons/Triangulation_2.qrc:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h:
 
+/usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake:
+
 /usr/include/c++/13/list:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qdeadlinetimer.h:
@@ -6027,6 +6228,8 @@ icons/Input.qrc:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h:
 
+/usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake:
+
 /usr/include/boost/none_t.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h:
@@ -6038,6 +6241,8 @@ icons/Input.qrc:
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qfutureinterface.h:
+
+/usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdockwidget.h:
 
@@ -6091,6 +6296,10 @@ icons/Input.qrc:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcolordialog.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake:
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h:
@@ -6098,6 +6307,8 @@ icons/Input.qrc:
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qanimationgroup.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmath.h:
+
+/usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetaobject.h:
 
@@ -6129,6 +6340,8 @@ icons/Input.qrc:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
+/usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qqueue.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltexture.h:
@@ -6157,11 +6370,9 @@ icons/Input.qrc:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h:
 
+/usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake:
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h:
-
-/usr/include/boost/predef/compiler/sgi_mipspro.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout:
 
 /usr/include/c++/13/bits/basic_string.h:
 
@@ -6186,6 +6397,8 @@ icons/Input.qrc:
 /usr/include/c++/13/bits/quoted_string.h:
 
 /usr/include/boost/preprocessor/enum_shifted_params.hpp:
+
+/usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h:
 
@@ -6295,6 +6508,8 @@ icons/Input.qrc:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLVersionFunctions:
 
+/usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in:
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintDevice:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintDeviceWindow:
@@ -6376,6 +6591,8 @@ icons/Input.qrc:
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h:
 
 /usr/include/boost/mpl/aux_/config/static_constant.hpp:
+
+/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h:
 
@@ -6465,6 +6682,12 @@ icons/Input.qrc:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h:
 
+/usr/include/boost/variant/recursive_wrapper_fwd.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qglyphrun.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcheckbox.h:
+
 CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_DemosMainWindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h:
@@ -6486,6 +6709,8 @@ CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_DemosMainWindow.cpp:
 /usr/include/boost/mpl/list/aux_/O1_size.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qsyntaxhighlighter.h:
+
+/usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocumentwriter.h:
 
@@ -6529,8 +6754,6 @@ CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_DemosMainWindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qtopenglversion.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDoubleSpinBox:
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractproxymodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem:
@@ -6548,8 +6771,6 @@ CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_DemosMainWindow.cpp:
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMessageBox:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenubar.h:
 
@@ -6578,3 +6799,5 @@ CGAL_Qt5_moc_and_resources_autogen/34EZIPZFLO/moc_DemosMainWindow.cpp:
 /usr/include/boost/type_traits/has_trivial_constructor.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcolumnview.h:
