@@ -69,28 +69,28 @@ include CMakeFiles/ex.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ex.dir/flags.make
 
-CMakeFiles/ex.dir/main.cpp.o: CMakeFiles/ex.dir/flags.make
-CMakeFiles/ex.dir/main.cpp.o: main.cpp
-CMakeFiles/ex.dir/main.cpp.o: CMakeFiles/ex.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ex.dir/main.cpp.o -MF CMakeFiles/ex.dir/main.cpp.o.d -o CMakeFiles/ex.dir/main.cpp.o -c /root/project1/ProjectAlgorithms1/main.cpp
+CMakeFiles/ex.dir/maincentroid.cpp.o: CMakeFiles/ex.dir/flags.make
+CMakeFiles/ex.dir/maincentroid.cpp.o: maincentroid.cpp
+CMakeFiles/ex.dir/maincentroid.cpp.o: CMakeFiles/ex.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex.dir/maincentroid.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ex.dir/maincentroid.cpp.o -MF CMakeFiles/ex.dir/maincentroid.cpp.o.d -o CMakeFiles/ex.dir/maincentroid.cpp.o -c /root/project1/ProjectAlgorithms1/maincentroid.cpp
 
-CMakeFiles/ex.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ex.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project1/ProjectAlgorithms1/main.cpp > CMakeFiles/ex.dir/main.cpp.i
+CMakeFiles/ex.dir/maincentroid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ex.dir/maincentroid.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project1/ProjectAlgorithms1/maincentroid.cpp > CMakeFiles/ex.dir/maincentroid.cpp.i
 
-CMakeFiles/ex.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ex.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project1/ProjectAlgorithms1/main.cpp -o CMakeFiles/ex.dir/main.cpp.s
+CMakeFiles/ex.dir/maincentroid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ex.dir/maincentroid.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project1/ProjectAlgorithms1/maincentroid.cpp -o CMakeFiles/ex.dir/maincentroid.cpp.s
 
 # Object files for target ex
 ex_OBJECTS = \
-"CMakeFiles/ex.dir/main.cpp.o"
+"CMakeFiles/ex.dir/maincentroid.cpp.o"
 
 # External object files for target ex
 ex_EXTERNAL_OBJECTS =
 
-ex: CMakeFiles/ex.dir/main.cpp.o
+ex: CMakeFiles/ex.dir/maincentroid.cpp.o
 ex: CMakeFiles/ex.dir/build.make
 ex: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0
 ex: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0

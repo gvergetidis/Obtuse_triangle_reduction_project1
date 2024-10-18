@@ -31,7 +31,7 @@ add_definitions(-DCGAL_USE_BASIC_VIEWER)
 
 
 # Add executable
-add_executable(ex main.cpp)
+add_executable(ex maincentroid.cpp)
 
 
 #target_link_libraries(ex PRIVATE CGAL::CGAL)

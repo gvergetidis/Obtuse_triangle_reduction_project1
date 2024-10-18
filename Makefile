@@ -192,29 +192,29 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CGAL_Qt5_moc_and_resources.dir/build.make CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s
 .PHONY : CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+maincentroid.o: maincentroid.cpp.o
+.PHONY : maincentroid.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/main.cpp.o
-.PHONY : main.cpp.o
+maincentroid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/maincentroid.cpp.o
+.PHONY : maincentroid.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+maincentroid.i: maincentroid.cpp.i
+.PHONY : maincentroid.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/main.cpp.i
-.PHONY : main.cpp.i
+maincentroid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/maincentroid.cpp.i
+.PHONY : maincentroid.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+maincentroid.s: maincentroid.cpp.s
+.PHONY : maincentroid.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/main.cpp.s
-.PHONY : main.cpp.s
+maincentroid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/maincentroid.cpp.s
+.PHONY : maincentroid.cpp.s
 
 qrc_CGAL.o: qrc_CGAL.cpp.o
 .PHONY : qrc_CGAL.o
@@ -327,9 +327,9 @@ help:
 	@echo "... CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.o"
 	@echo "... CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.i"
 	@echo "... CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... maincentroid.o"
+	@echo "... maincentroid.i"
+	@echo "... maincentroid.s"
 	@echo "... qrc_CGAL.o"
 	@echo "... qrc_CGAL.i"
 	@echo "... qrc_CGAL.s"
