@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ex.dir/maincentroid.cpp.o"
-  "CMakeFiles/ex.dir/maincentroid.cpp.o.d"
-  "ex"
-  "ex.pdb"
+  "/root/project1/ex"
+  "/root/project1/ex.pdb"
+  "CMakeFiles/ex.dir/jsontest2.cpp.o"
+  "CMakeFiles/ex.dir/jsontest2.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

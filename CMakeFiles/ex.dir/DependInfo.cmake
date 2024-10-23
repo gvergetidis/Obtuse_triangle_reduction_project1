@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/project1/ProjectAlgorithms1/maincentroid.cpp" "CMakeFiles/ex.dir/maincentroid.cpp.o" "gcc" "CMakeFiles/ex.dir/maincentroid.cpp.o.d"
+  "/root/project1/ProjectAlgorithms1/jsontest2.cpp" "CMakeFiles/ex.dir/jsontest2.cpp.o" "gcc" "CMakeFiles/ex.dir/jsontest2.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

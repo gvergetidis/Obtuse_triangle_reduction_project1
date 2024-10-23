@@ -6,5 +6,5 @@ CXX_DEFINES = -DCGAL_USE_BASIC_VIEWER -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_
 
 CXX_INCLUDES = -I/root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/include -I/root/project1/ProjectAlgorithms1 -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtOpenGL
 
-CXX_FLAGS = -std=gnu++17 -fPIC -frounding-math -fPIC
+CXX_FLAGS = -O3 -DNDEBUG -fPIC -frounding-math -fPIC
 

@@ -21,14 +21,12 @@ BUILD_TESTING:BOOL=OFF
 Boost_DEBUG:BOOL=OFF
 
 //The directory containing a CMake configuration file for Boost.
-Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0
-
-Boost_FILESYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0
+Boost_DIR:PATH=/usr/local/lib/cmake/Boost-1.86.0
 
 //Path to a file.
-Boost_INCLUDE_DIR:PATH=/usr/include
+Boost_INCLUDE_DIR:PATH=/usr/local/include
 
-Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
+Boost_JSON_LIBRARY_RELEASE:STRING=/usr/local/lib/libboost_json.so.1.86.0
 
 //Link with static Boost libraries
 CGAL_Boost_USE_STATIC_LIBS:BOOL=OFF
@@ -46,9 +44,6 @@ CGAL_DEV_MODE:BOOL=OFF
 
 //The directory containing a CMake configuration file for CGAL.
 CGAL_DIR:PATH=/usr/local/lib/cmake/CGAL
-
-//Dependencies for the target
-CGAL_Qt5_moc_and_resources_LIB_DEPENDS:STATIC=general;CGAL::CGAL;general;Qt5::Widgets;general;Qt5::OpenGL;
 
 //If set, the ctest command will not skip the tests of the draw
 // functions.
@@ -300,17 +295,14 @@ Qt5Widgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets
 //The directory containing a CMake configuration file for Qt5.
 Qt5_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5
 
-//The directory containing a CMake configuration file for boost_atomic.
-boost_atomic_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.83.0
-
-//The directory containing a CMake configuration file for boost_filesystem.
-boost_filesystem_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.83.0
+//The directory containing a CMake configuration file for boost_container.
+boost_container_DIR:PATH=/usr/local/lib/cmake/boost_container-1.86.0
 
 //The directory containing a CMake configuration file for boost_headers.
-boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.83.0
+boost_headers_DIR:PATH=/usr/local/lib/cmake/boost_headers-1.86.0
 
-//The directory containing a CMake configuration file for boost_system.
-boost_system_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.83.0
+//The directory containing a CMake configuration file for boost_json.
+boost_json_DIR:PATH=/usr/local/lib/cmake/boost_json-1.86.0
 
 //Value Computed by CMake
 ex_BINARY_DIR:STATIC=/root/project1/ProjectAlgorithms1
@@ -319,7 +311,7 @@ ex_BINARY_DIR:STATIC=/root/project1/ProjectAlgorithms1
 ex_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-ex_SOURCE_DIR:STATIC=/root/project1/ProjectAlgorithms1
+ex_SOURCE_DIR:STATIC=/root/project1/ProjectAlgorithms1/Build
 
 
 ########################
@@ -420,7 +412,7 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/root/project1/ProjectAlgorithms1
+CMAKE_HOME_DIRECTORY:INTERNAL=/root/project1/ProjectAlgorithms1/Build
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
@@ -486,7 +478,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Boost
-FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake][cfound components: system filesystem ][v1.83.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/local/lib/cmake/Boost-1.86.0/BoostConfig.cmake][cfound components: json ][v1.86.0()]
 //Details about finding GMP
 FIND_PACKAGE_MESSAGE_DETAILS_GMP:INTERNAL=[/usr/lib/x86_64-linux-gnu/libgmp.so][/usr/include/x86_64-linux-gnu][v()]
 //Details about finding MPFR
@@ -495,12 +487,10 @@ FIND_PACKAGE_MESSAGE_DETAILS_MPFR:INTERNAL=[/usr/lib/x86_64-linux-gnu/libmpfr.so
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
-//ADVANCED property for variable: boost_atomic_DIR
-boost_atomic_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: boost_filesystem_DIR
-boost_filesystem_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_container_DIR
+boost_container_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: boost_headers_DIR
 boost_headers_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: boost_system_DIR
-boost_system_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_json_DIR
+boost_json_DIR-ADVANCED:INTERNAL=1
 

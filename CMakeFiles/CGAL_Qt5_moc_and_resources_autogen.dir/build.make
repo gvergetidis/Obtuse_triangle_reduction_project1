@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/project1/ProjectAlgorithms1
+CMAKE_SOURCE_DIR = /root/project1/ProjectAlgorithms1/Build
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/project1/ProjectAlgorithms1
@@ -71,7 +71,7 @@ CMakeFiles/CGAL_Qt5_moc_and_resources_autogen: CGAL_Qt5_moc_and_resources_autoge
 CGAL_Qt5_moc_and_resources_autogen/timestamp: /usr/lib/qt5/bin/moc
 CGAL_Qt5_moc_and_resources_autogen/timestamp: CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target CGAL_Qt5_moc_and_resources"
-	/usr/bin/cmake -E cmake_autogen /root/project1/ProjectAlgorithms1/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E cmake_autogen /root/project1/ProjectAlgorithms1/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenInfo.json Release
 	/usr/bin/cmake -E touch /root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/timestamp
 
 CGAL_Qt5_moc_and_resources_autogen: CGAL_Qt5_moc_and_resources_autogen/timestamp
@@ -88,6 +88,6 @@ CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/clean:
 .PHONY : CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/clean
 
 CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/depend:
-	cd /root/project1/ProjectAlgorithms1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /root/project1/ProjectAlgorithms1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/project1/ProjectAlgorithms1/Build /root/project1/ProjectAlgorithms1/Build /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/depend
 

@@ -54,7 +54,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/project1/ProjectAlgorithms1
+CMAKE_SOURCE_DIR = /root/project1/ProjectAlgorithms1/Build
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/project1/ProjectAlgorithms1
@@ -85,12 +85,12 @@ CMakeFiles/CGAL_Qt5_moc_and_resources.dir/all: CMakeFiles/CGAL_Qt5_moc_and_resou
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/all: CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CGAL_Qt5_moc_and_resources.dir/build.make CMakeFiles/CGAL_Qt5_moc_and_resources.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CGAL_Qt5_moc_and_resources.dir/build.make CMakeFiles/CGAL_Qt5_moc_and_resources.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target CGAL_Qt5_moc_and_resources"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target CGAL_Qt5_moc_and_resources"
 .PHONY : CMakeFiles/CGAL_Qt5_moc_and_resources.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/project1/ProjectAlgorithms1/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/project1/ProjectAlgorithms1/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CGAL_Qt5_moc_and_resources.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/project1/ProjectAlgorithms1/CMakeFiles 0
 .PHONY : CMakeFiles/CGAL_Qt5_moc_and_resources.dir/rule
@@ -111,12 +111,12 @@ CMakeFiles/CGAL_Qt5_moc_and_resources.dir/clean:
 CMakeFiles/ex.dir/all: CMakeFiles/CGAL_Qt5_moc_and_resources.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=14,15 "Built target ex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=13,14 "Built target ex"
 .PHONY : CMakeFiles/ex.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/project1/ProjectAlgorithms1/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/project1/ProjectAlgorithms1/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/project1/ProjectAlgorithms1/CMakeFiles 0
 .PHONY : CMakeFiles/ex.dir/rule
@@ -163,7 +163,7 @@ CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/clean:
 CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/all: CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/build.make CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/build.make CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=13 "Built target CGAL_Qt5_moc_and_resources_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=12 "Built target CGAL_Qt5_moc_and_resources_autogen"
 .PHONY : CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/all
 
 # Build rule for subdir invocation for target.

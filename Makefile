@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/project1/ProjectAlgorithms1
+CMAKE_SOURCE_DIR = /root/project1/ProjectAlgorithms1/Build
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/project1/ProjectAlgorithms1
@@ -192,29 +192,29 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CGAL_Qt5_moc_and_resources.dir/build.make CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s
 .PHONY : CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s
 
-maincentroid.o: maincentroid.cpp.o
-.PHONY : maincentroid.o
+jsontest2.o: jsontest2.cpp.o
+.PHONY : jsontest2.o
 
 # target to build an object file
-maincentroid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/maincentroid.cpp.o
-.PHONY : maincentroid.cpp.o
+jsontest2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/jsontest2.cpp.o
+.PHONY : jsontest2.cpp.o
 
-maincentroid.i: maincentroid.cpp.i
-.PHONY : maincentroid.i
+jsontest2.i: jsontest2.cpp.i
+.PHONY : jsontest2.i
 
 # target to preprocess a source file
-maincentroid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/maincentroid.cpp.i
-.PHONY : maincentroid.cpp.i
+jsontest2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/jsontest2.cpp.i
+.PHONY : jsontest2.cpp.i
 
-maincentroid.s: maincentroid.cpp.s
-.PHONY : maincentroid.s
+jsontest2.s: jsontest2.cpp.s
+.PHONY : jsontest2.s
 
 # target to generate assembly for a file
-maincentroid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/maincentroid.cpp.s
-.PHONY : maincentroid.cpp.s
+jsontest2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/jsontest2.cpp.s
+.PHONY : jsontest2.cpp.s
 
 qrc_CGAL.o: qrc_CGAL.cpp.o
 .PHONY : qrc_CGAL.o
@@ -327,9 +327,9 @@ help:
 	@echo "... CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.o"
 	@echo "... CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.i"
 	@echo "... CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.s"
-	@echo "... maincentroid.o"
-	@echo "... maincentroid.i"
-	@echo "... maincentroid.s"
+	@echo "... jsontest2.o"
+	@echo "... jsontest2.i"
+	@echo "... jsontest2.s"
 	@echo "... qrc_CGAL.o"
 	@echo "... qrc_CGAL.i"
 	@echo "... qrc_CGAL.s"

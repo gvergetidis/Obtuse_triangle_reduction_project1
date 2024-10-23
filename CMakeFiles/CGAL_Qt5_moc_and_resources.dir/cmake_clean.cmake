@@ -2,8 +2,6 @@ file(REMOVE_RECURSE
   "CGAL_Qt5_moc_and_resources_autogen"
   "CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/ParseCache.txt"
-  "CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp"
-  "CGAL_Qt5_moc_and_resources_autogen/timestamp"
   "CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o"

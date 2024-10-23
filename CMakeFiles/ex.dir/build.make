@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/project1/ProjectAlgorithms1
+CMAKE_SOURCE_DIR = /root/project1/ProjectAlgorithms1/Build
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/project1/ProjectAlgorithms1
@@ -69,46 +69,45 @@ include CMakeFiles/ex.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ex.dir/flags.make
 
-CMakeFiles/ex.dir/maincentroid.cpp.o: CMakeFiles/ex.dir/flags.make
-CMakeFiles/ex.dir/maincentroid.cpp.o: maincentroid.cpp
-CMakeFiles/ex.dir/maincentroid.cpp.o: CMakeFiles/ex.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex.dir/maincentroid.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ex.dir/maincentroid.cpp.o -MF CMakeFiles/ex.dir/maincentroid.cpp.o.d -o CMakeFiles/ex.dir/maincentroid.cpp.o -c /root/project1/ProjectAlgorithms1/maincentroid.cpp
+CMakeFiles/ex.dir/jsontest2.cpp.o: CMakeFiles/ex.dir/flags.make
+CMakeFiles/ex.dir/jsontest2.cpp.o: jsontest2.cpp
+CMakeFiles/ex.dir/jsontest2.cpp.o: CMakeFiles/ex.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex.dir/jsontest2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ex.dir/jsontest2.cpp.o -MF CMakeFiles/ex.dir/jsontest2.cpp.o.d -o CMakeFiles/ex.dir/jsontest2.cpp.o -c /root/project1/ProjectAlgorithms1/jsontest2.cpp
 
-CMakeFiles/ex.dir/maincentroid.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ex.dir/maincentroid.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project1/ProjectAlgorithms1/maincentroid.cpp > CMakeFiles/ex.dir/maincentroid.cpp.i
+CMakeFiles/ex.dir/jsontest2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ex.dir/jsontest2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project1/ProjectAlgorithms1/jsontest2.cpp > CMakeFiles/ex.dir/jsontest2.cpp.i
 
-CMakeFiles/ex.dir/maincentroid.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ex.dir/maincentroid.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project1/ProjectAlgorithms1/maincentroid.cpp -o CMakeFiles/ex.dir/maincentroid.cpp.s
+CMakeFiles/ex.dir/jsontest2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ex.dir/jsontest2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project1/ProjectAlgorithms1/jsontest2.cpp -o CMakeFiles/ex.dir/jsontest2.cpp.s
 
 # Object files for target ex
 ex_OBJECTS = \
-"CMakeFiles/ex.dir/maincentroid.cpp.o"
+"CMakeFiles/ex.dir/jsontest2.cpp.o"
 
 # External object files for target ex
 ex_EXTERNAL_OBJECTS =
 
-ex: CMakeFiles/ex.dir/maincentroid.cpp.o
-ex: CMakeFiles/ex.dir/build.make
-ex: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0
-ex: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
-ex: libCGAL_Qt5_moc_and_resources.a
-ex: /usr/lib/x86_64-linux-gnu/libgmpxx.so
-ex: /usr/lib/x86_64-linux-gnu/libmpfr.so
-ex: /usr/lib/x86_64-linux-gnu/libgmp.so
-ex: /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so.5.15.13
-ex: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
-ex: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
-ex: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
-ex: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.83.0
-ex: CMakeFiles/ex.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ex"
+/root/project1/ex: CMakeFiles/ex.dir/jsontest2.cpp.o
+/root/project1/ex: CMakeFiles/ex.dir/build.make
+/root/project1/ex: /usr/local/lib/libboost_json.so.1.86.0
+/root/project1/ex: libCGAL_Qt5_moc_and_resources.a
+/root/project1/ex: /usr/lib/x86_64-linux-gnu/libgmpxx.so
+/root/project1/ex: /usr/lib/x86_64-linux-gnu/libmpfr.so
+/root/project1/ex: /usr/lib/x86_64-linux-gnu/libgmp.so
+/root/project1/ex: /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so.5.15.13
+/root/project1/ex: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
+/root/project1/ex: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
+/root/project1/ex: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
+/root/project1/ex: /usr/local/lib/libboost_container.so.1.86.0
+/root/project1/ex: CMakeFiles/ex.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /root/project1/ex"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ex.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/ex.dir/build: ex
+CMakeFiles/ex.dir/build: /root/project1/ex
 .PHONY : CMakeFiles/ex.dir/build
 
 CMakeFiles/ex.dir/clean:
@@ -116,6 +115,6 @@ CMakeFiles/ex.dir/clean:
 .PHONY : CMakeFiles/ex.dir/clean
 
 CMakeFiles/ex.dir/depend:
-	cd /root/project1/ProjectAlgorithms1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1/CMakeFiles/ex.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /root/project1/ProjectAlgorithms1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/project1/ProjectAlgorithms1/Build /root/project1/ProjectAlgorithms1/Build /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1/CMakeFiles/ex.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ex.dir/depend
 

@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/project1/ProjectAlgorithms1
+CMAKE_SOURCE_DIR = /root/project1/ProjectAlgorithms1/Build
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/project1/ProjectAlgorithms1
@@ -83,6 +83,6 @@ CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/depend:
-	cd /root/project1/ProjectAlgorithms1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /root/project1/ProjectAlgorithms1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/project1/ProjectAlgorithms1/Build /root/project1/ProjectAlgorithms1/Build /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1 /root/project1/ProjectAlgorithms1/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/depend
 

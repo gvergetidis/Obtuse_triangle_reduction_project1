@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "" "CGAL_Qt5_moc_and_resources_autogen/timestamp" "custom" "CGAL_Qt5_moc_and_resources_autogen/deps"
   "/root/project1/ProjectAlgorithms1/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp" "CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.o.d"
   "/root/project1/ProjectAlgorithms1/qrc_CGAL.cpp" "CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o" "gcc" "CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.o.d"
   "/root/project1/ProjectAlgorithms1/qrc_File.cpp" "CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o" "gcc" "CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.o.d"
