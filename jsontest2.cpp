@@ -59,7 +59,7 @@ typedef CGAL::Polygon_2<K> Polygon_2;
 #include <CGAL/Polygon_traits_2.h>
 
 
-bool my_angle(Face face){
+bool is_obtuse(Face face){
     Point a = face.vertex(0)->point();
         Point b = face.vertex(1)->point();
         Point c = face.vertex(2)->point();
@@ -136,6 +136,13 @@ int obtuse_count(CDT cdt){
 
 #include <gmp.h>
 
+void printface(Point a , Point b ,Point c ){
+    std::cout << a << std::endl; 
+    std::cout << b << std::endl; 
+    std::cout << c << std::endl;
+}
+
+
 std::pair<std::string, std::string> print_rational(const K::FT& coord) {
     const auto exact_coord = CGAL::exact(coord);
 
@@ -179,6 +186,147 @@ bool in_regionboundry(std::vector<Point> points , Point p){
         return false;
     }
     return true;
+}
+int get_obtuse(Face_handle facep){
+    Point a = facep->vertex(0)->point();
+    Point b =  facep->vertex(1)->point();
+    Point c =  facep->vertex(2)->point();
+
+    Vertex_handle va =  facep->vertex(0);
+    Vertex_handle vb =  facep->vertex(1);
+    Vertex_handle vc =  facep->vertex(2);
+
+    Angle A = angle(b,a,c);
+    Angle B = angle(a,b,c);
+    Angle C = angle(a,c,b);
+    if(A== CGAL::OBTUSE){
+        std::cout << "A" << std::endl;
+        return 0;
+    }
+    else if(B== CGAL::OBTUSE){
+        std::cout << "B" << std::endl;
+        return 1;
+    }
+    else if(C== CGAL::OBTUSE){
+        std::cout << "C" << std::endl;
+        return 2;
+    }
+    return -1;
+}
+
+Point get_projection(Face_handle facep){
+    int obtuseInd = get_obtuse(facep);
+    Point p1 = facep->vertex(obtuseInd)->point();
+    Point p2 = facep->vertex(CDT::ccw(obtuseInd))->point();
+    Point p3 = facep->vertex(CDT::cw(obtuseInd))->point();
+    Line l(p2,p3);
+    Point proj = l.projection(p1);
+    return proj;
+}
+
+Point get_middlepoint(Face_handle facep){
+    int obtuseInd = get_obtuse(facep);
+    Point p1 = facep->vertex(obtuseInd)->point();
+    Point p2 = facep->vertex(CDT::ccw(obtuseInd))->point();
+    Point p3 = facep->vertex(CDT::cw(obtuseInd))->point();
+    Point m = CGAL::midpoint(p2,p3);
+    return m;
+}
+
+Point get_centroid(Face_handle facep){
+    int obtuseInd = get_obtuse(facep);
+    Point p1 = facep->vertex(obtuseInd)->point();
+    Point p2 = facep->vertex(CDT::ccw(obtuseInd))->point();
+    Point p3 = facep->vertex(CDT::cw(obtuseInd))->point();
+    Point ce = CGAL::centroid(p1,p2,p3);
+    return ce;
+}
+
+Point get_circumcenter(Face_handle facep){
+    int obtuseInd = get_obtuse(facep);
+    Point p1 = facep->vertex(obtuseInd)->point();
+    Point p2 = facep->vertex(CDT::ccw(obtuseInd))->point();
+    Point p3 = facep->vertex(CDT::cw(obtuseInd))->point();
+    Point circ = CGAL::circumcenter(p1,p2,p3);
+    return circ;
+}
+
+Point get_circumcenter_centroid(Face_handle facep, std::vector<Point> points){
+    Point steiner = get_circumcenter(facep);
+    if(!in_regionboundry(points,steiner)){
+        steiner = get_centroid(facep);
+    }
+    return steiner;
+}
+
+bool get_polygon_centre(Face_handle facep, CDT cdt){
+    int obtuseInd = get_obtuse(facep);
+    Point p1 = facep->vertex(obtuseInd)->point();
+    Point p2 = facep->vertex(CDT::ccw(obtuseInd))->point();
+    Point p3 = facep->vertex(CDT::cw(obtuseInd))->point();
+    Face_handle neigh = facep->neighbor(obtuseInd);
+    if(!cdt.is_infinite(neigh)){ //check if neighbour is finite
+        Point p4 = neigh->vertex(neigh->index(facep))->point(); //get the opposite of p1 the point d
+        //points of neighbour
+        Point na = neigh->vertex(0)->point();
+        Point nb = neigh->vertex(1)->point();
+        Point nc = neigh->vertex(2)->point();
+        //get the centroid of the polygon abcd
+        Point polygon_centre = CGAL::centroid(p1,p2,p3,p4);
+
+        //Check if the polygon_centre is in the edge (the 3 points are collinear)
+        if(!CGAL::collinear(p2,polygon_centre,p3)){ //the 3 points are not collinear
+            Face_handle f = cdt.locate(polygon_centre); //find the face that polygon_centre is in
+            Point af = f->vertex(0)->point();
+            Point bf = f->vertex(1)->point();
+            Point cf = f->vertex(2)->point();
+            std::cout <<"FACE THAT IS THE P"<< std::endl; 
+            std::cout << af << std::endl; 
+            std::cout << bf << std::endl; 
+            std::cout << cf << std::endl;
+
+            //if(a==af && b==bf & c==cf){ //case 1 the polygon center is in the existing triangle
+            if(f == facep){
+                std::cout<<"IN tringle1"<< std::endl;
+                // cdt.insert_no_flip(polygon_centre);
+                // Edge edge(f, neigh->index(facep));
+                // cdt.flip(edge.first , edge.second);
+                
+                Edge edge(f, (facep->index(neigh))%3);
+                std::cout<<"number ----------------- "<<facep->index(neigh)<<std::endl;
+                cdt.insert_no_flip(polygon_centre);
+                if(!cdt.is_constrained(edge)) cdt.flip(edge.first , edge.second);
+                //polyinfo.push_back(make_tuple(facep,neigh,edge,polygon_centre));
+            }
+            //else if(na==af && nb==bf && nc==cf){  //case 2 the polygon center is in the new triangle
+            else if(f == neigh){
+                    std::cout<<"IN tringle2"<< std::endl;
+                // cdt.insert_no_flip(polygon_centre);
+                // Edge edge(facep, 0);
+                // cdt.flip(edge.first , edge.second);
+
+                Edge edge(facep, 0);
+                //polyinfo.push_back(make_tuple(facep,neigh,edge,polygon_centre));
+                cdt.insert_no_flip(polygon_centre);
+                if(!cdt.is_constrained(edge)) cdt.flip(edge.first , edge.second);
+            }else{ //case 3 polygon center is outside of the polygon 
+                std::cout<<"Outside"<< std::endl;
+                return true;
+            }
+        }
+        else{ //the 3 points are collinear
+            std::cout<<"Collinear"<< std::endl;
+            return true;
+        }
+        // centers.push_back(polygon_centre);
+        //std::cout << m << std::endl;
+        // midpoints.push_back(m);
+        // circs.push_back(centroid);
+    }
+    else{
+        std::cout<<"Infinite neighbour"<<std::endl;
+        return true;
+    }
 }
 
 int main(int argc, char* argv[]){
@@ -302,13 +450,14 @@ int main(int argc, char* argv[]){
 
     //--------------------Create cdt---------------------------------------
     CDT cdt;
+    std::vector<Point> startpoints ={};
     for(const Point& p :points){
         cdt.insert(p);
+        startpoints.push_back(p);
     }
     for(const auto& constraint:constraints){
         cdt.insert_constraint(points[constraint.first], points[constraint.second]);
     }
-    CDT cdt2 = CDT(cdt); //copy the initial cdt
     CGAL::draw(cdt);
 
     Face_iterator it = cdt.faces_begin();
@@ -332,24 +481,9 @@ int main(int argc, char* argv[]){
     //terate through finite edges and flip if possible
     
     //-----------TESTING REG BOUNDRY--------------------------
-    // Polygon_2 polygon;
-    // for(const Point& p :points){
-    //     polygon.push_back(p);
-    // }
-    // if(polygon.bounded_side(Point(1,3))== CGAL::ON_UNBOUNDED_SIDE){
-    //     std::cout<<"OUT OF THE REGION BOUNDARY"<<std::endl;
-    // }
-    // return 0 ;
-    
     // std::cout<< in_regionboundry(rbpoints , Point(100,70))<<std::endl;
     // std::cout<< in_regionboundry(rbpoints , Point(0,0))<<std::endl;
     // std::cout<< in_regionboundry(rbpoints , Point(25,25))<<std::endl;
-
-
-    return 0;
-
-
-
 
 
     //---------------------------------Flipping--------------------------------
@@ -415,140 +549,121 @@ int main(int argc, char* argv[]){
         }
     }
 
-    //----------------------------steiner only projection here-------------------
+    CDT cdt2 = CDT(cdt);
+    CDT cdt3 = CDT(cdt);
+    CDT cdt4 = CDT(cdt);
+
+    //----------------------------Middle Point-------------------
     int limit = 20;
     for(int i=0; i<limit ;i++){
-        std::cout<<"----------------------------------\n";
         it = cdt.finite_faces_begin();
         beyond = cdt.finite_faces_end();
         std::vector<std::tuple<Face_handle, Face_handle,Edge,Point>> polyinfo = {};
         while (it != beyond) {
             bool obtuse = false;
-            std::cout<<"hiiiiiiiiiiiiiiiii\n";
             face = *it;  // get face
             Face_handle facep = it;
-            Point a = face.vertex(0)->point();
-            Point b = face.vertex(1)->point();
-            Point c = face.vertex(2)->point();
-
-            Vertex_handle va = face.vertex(0);
-            Vertex_handle vb = face.vertex(1);
-            Vertex_handle vc = face.vertex(2);
-
-            
-            std::cout <<"FACE"<< std::endl; 
-            std::cout << a << std::endl; 
-            std::cout << b << std::endl; 
-            std::cout << c << std::endl; 
-
-            Angle A = angle(b,a,c);
-            Angle B = angle(a,b,c);
-            Angle C = angle(a,c,b);
-            if(A== CGAL::OBTUSE){
-                obtuse = true;
-  
-
-                std::cout << "A" << std::endl;
-                Face_handle neigh = face.neighbor(0);
-
-                Line l(b,c);
-                Point proj = l.projection(a);
-
-                //CGAL::_projection()
-
-                if(CGAL::collinear(proj,b,c)) std::cout<<" colinear\n";
-                else std::cout<<" no colinear\n";
-
-                std::cout<<"PRINT RATIONAL--------------------------------\n";
-                std::pair<std::string, std::string> xpair = print_rational(proj.x());
-                std::pair<std::string, std::string> ypair = print_rational(proj.y());
-
-                std::cout<<xpair.first <<"/"<<xpair.second<<std::endl;
-                std::cout<<ypair.first <<"/"<<ypair.second<<std::endl;
-
-                steinerx.push_back(xpair.first + "/" + xpair.second);
-                steinery.push_back(ypair.first + "/" + ypair.second);
-
-                points.push_back(proj);
-
-                // steiner_points_x.push_back(proj.x()); 
-                // steiner_points_y.push_back(proj.y()); 
-                cdt.insert_no_flip(proj);
-                std::cout<<"inserted point "<<proj<<std::endl;
-                //if (cdt.is_infinite(neigh))  projs.push_back(proj);
-            }
-            else if(B== CGAL::OBTUSE){
-                obtuse = true;
-
-                
-                std::cout << "B" << std::endl;
-                Face_handle neigh = face.neighbor(1);
-
-                Line l(a,c);
-                Point proj = l.projection(b);
-                cdt.insert_no_flip(proj);
-
-                
-                std::cout<<"PRINT RATIONAL--------------------------------\n";
-                std::pair<std::string, std::string> xpair = print_rational(proj.x());
-                std::pair<std::string, std::string> ypair = print_rational(proj.y());
-                
-                std::cout<<xpair.first <<"/"<<xpair.second<<std::endl;
-                std::cout<<ypair.first <<"/"<<ypair.second<<std::endl;
-
-                steinerx.push_back(xpair.first + "/" + xpair.second);
-                steinery.push_back(ypair.first + "/" + ypair.second);
-
-                points.push_back(proj);
-
-                std::cout<<"inserted point "<<proj<<std::endl;
-                if(CGAL::collinear(proj,a,c)) std::cout<<"colinear\n";
-                else std::cout<<" no colinear\n";
-                //if (cdt.is_infinite(neigh))  projs.push_back(proj); 
-
-                
-            }
-            else if(C== CGAL::OBTUSE){
-                obtuse = true;
-
-                std::cout << "C" << std::endl;
-                Face_handle neigh = face.neighbor(2);
-
-                Line l(a,b);
-                Point proj = l.projection(c);
-                cdt.insert_no_flip(proj);
-                
-                std::cout<<"PRINT RATIONAL--------------------------------\n";
-                std::pair<std::string, std::string> xpair = print_rational(proj.x());
-                std::pair<std::string, std::string> ypair = print_rational(proj.y());
-                
-                std::cout<<xpair.first <<"/"<<xpair.second<<std::endl;
-                std::cout<<ypair.first <<"/"<<ypair.second<<std::endl;
-
-                steinerx.push_back(xpair.first + "/" + xpair.second);
-                steinery.push_back(ypair.first + "/" + ypair.second);
-
-                points.push_back(proj);
-
-                std::cout<<"inserted point "<<proj<<std::endl;
-                if(CGAL::collinear(proj,b,a)) std::cout<<"colinear\n";
-                else std::cout<<" no colinear\n";
-                //if (cdt.is_infinite(neigh))  projs.push_back(proj);
-                
-            }
-            if(obtuse){
+            Point m;
+            if(is_obtuse(*facep)){
+                m = get_middlepoint(facep);
+                cdt.insert_no_flip(m);
+                points.push_back(m);
                 break;
             }
             ++it;        // advance the iterator
         }
-        //for(auto p : projs) cdt.insert_no_flip(p);
     }
     int c2=obtuse_count(cdt);
     std::cout <<"Before" << c1 << std::endl;
-    std::cout <<"After"<< c2 << std::endl; 
+    std::cout <<"After middle steiner "<< c2 << std::endl; 
     CGAL::draw(cdt);
+    
+    //-----------------------------Circum-center-Centroid------------------------------------------
+    c1=obtuse_count(cdt2);
+    limit = 20;
+    for(int i=0; i<limit ;i++){
+        it = cdt2.finite_faces_begin();
+        beyond = cdt2.finite_faces_end();
+        std::vector<std::tuple<Face_handle, Face_handle,Edge,Point>> polyinfo = {};
+        while (it != beyond) {
+            bool obtuse = false;
+            face = *it;  // get face
+            Face_handle facep = it;
+            Point ce;
+            if(is_obtuse(*facep)){
+                ce = get_circumcenter_centroid(facep , startpoints);
+                cdt2.insert_no_flip(ce);
+                points.push_back(ce);
+                break;
+            }
+            ++it;        // advance the iterator
+        }
+    }
+    c2=obtuse_count(cdt2);
+    std::cout <<"Before" << c1 << std::endl;
+    std::cout <<"After centroid/circumsenter steiner "<< c2 << std::endl; 
+    CGAL::draw(cdt2);
 
-
+    //-----------------------------Polygon center--------------------------------------------------
+    c1=obtuse_count(cdt3);
+    limit = 20;
+    for(int i=0; i<limit ;i++){
+        it = cdt3.finite_faces_begin();
+        beyond = cdt3.finite_faces_end();
+        std::vector<std::tuple<Face_handle, Face_handle,Edge,Point>> polyinfo = {};
+        while (it != beyond) {
+            bool obtuse = false;
+            face = *it;  // get face
+            Face_handle facep = it;
+            if(is_obtuse(*facep)){
+                bool cont = get_polygon_centre(facep,cdt);
+                if(cont){
+                    it++;
+                    continue;
+                }
+                else{
+                    break;
+                }
+            }
+            ++it;        // advance the iterator
+        }
+    }
+    c2=obtuse_count(cdt3);
+    std::cout <<"Before" << c1 << std::endl;
+    std::cout <<"After centroid/circumsenter steiner "<< c2 << std::endl; 
+    CGAL::draw(cdt3);
+    
+    //-----------------------------Projection------------------------------------------------------
+    c1=obtuse_count(cdt4);
+    std::cout <<"CDT4"<<std::endl; 
+    CGAL::draw(cdt4);
+    limit = 20;
+    for(int i=0; i<limit ;i++){
+        it = cdt4.finite_faces_begin();
+        beyond = cdt4.finite_faces_end();
+        std::vector<std::tuple<Face_handle, Face_handle,Edge,Point>> polyinfo = {};
+        while (it != beyond) {
+            bool obtuse = false;
+            face = *it;  // get face
+            Face_handle facep = it;
+            Point proj;
+            if(is_obtuse(*facep)){
+                proj = get_projection(facep);
+                cdt4.insert_no_flip(proj);
+                points.push_back(proj);
+                std::pair<std::string, std::string> xpair = print_rational(proj.x());
+                std::pair<std::string, std::string> ypair = print_rational(proj.y());
+                steinerx.push_back(xpair.first + "/" + xpair.second);
+                steinery.push_back(ypair.first + "/" + ypair.second);
+                break;
+            }
+            ++it;        // advance the iterator
+        }
+    }
+    c2=obtuse_count(cdt4);
+    std::cout <<"Before" << c1 << std::endl;
+    std::cout <<"After projection"<< c2 << std::endl; 
+    CGAL::draw(cdt4);
 
 
 
@@ -598,6 +713,10 @@ int main(int argc, char* argv[]){
         int i1 = -1;
         int i2 = -1;
         for(int i=0 ; i<points.size() ; i++){
+            // std::cout<<"Point in Vector " << points.at(i) << std::endl;
+            // std::cout<< "P1 " << p1 << std::endl;
+            // std::cout<< "P2 " << p2 << std::endl;
+
             if(points.at(i) == p1){
                 i1 = i;
             }
@@ -606,6 +725,8 @@ int main(int argc, char* argv[]){
             }
         }
         if( i1 == -1 || i2 == -1){
+            // std::cout<<i1 << i2 <<std::endl;
+            // std::cout<<i1 << i2 <<std::endl;
             std::cout<<"NOT FOUND"<<std::endl;
             break;
         }
