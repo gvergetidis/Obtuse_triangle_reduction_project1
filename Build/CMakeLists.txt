@@ -4,7 +4,7 @@ project(ex)
 
 set(CMAKE_BUILD_TYPE "Release")             #set this variable for not taking warnings about CGAL performance issues 
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/..)  #set the directory where the executable will be placed
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})  #set the directory where the executable will be placed
 
 #find CGAL
 find_package(CGAL QUIET COMPONENTS Qt5)
