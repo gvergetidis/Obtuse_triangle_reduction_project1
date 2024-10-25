@@ -288,29 +288,29 @@ qrc_Triangulation_2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CGAL_Qt5_moc_and_resources.dir/build.make CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.s
 .PHONY : qrc_Triangulation_2.cpp.s
 
-root/ProjectAlgorithms1/testpolygon.o: root/ProjectAlgorithms1/testpolygon.cpp.o
-.PHONY : root/ProjectAlgorithms1/testpolygon.o
+root/ProjectAlgorithms1/jsontest2.o: root/ProjectAlgorithms1/jsontest2.cpp.o
+.PHONY : root/ProjectAlgorithms1/jsontest2.o
 
 # target to build an object file
-root/ProjectAlgorithms1/testpolygon.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/root/ProjectAlgorithms1/testpolygon.cpp.o
-.PHONY : root/ProjectAlgorithms1/testpolygon.cpp.o
+root/ProjectAlgorithms1/jsontest2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/root/ProjectAlgorithms1/jsontest2.cpp.o
+.PHONY : root/ProjectAlgorithms1/jsontest2.cpp.o
 
-root/ProjectAlgorithms1/testpolygon.i: root/ProjectAlgorithms1/testpolygon.cpp.i
-.PHONY : root/ProjectAlgorithms1/testpolygon.i
+root/ProjectAlgorithms1/jsontest2.i: root/ProjectAlgorithms1/jsontest2.cpp.i
+.PHONY : root/ProjectAlgorithms1/jsontest2.i
 
 # target to preprocess a source file
-root/ProjectAlgorithms1/testpolygon.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/root/ProjectAlgorithms1/testpolygon.cpp.i
-.PHONY : root/ProjectAlgorithms1/testpolygon.cpp.i
+root/ProjectAlgorithms1/jsontest2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/root/ProjectAlgorithms1/jsontest2.cpp.i
+.PHONY : root/ProjectAlgorithms1/jsontest2.cpp.i
 
-root/ProjectAlgorithms1/testpolygon.s: root/ProjectAlgorithms1/testpolygon.cpp.s
-.PHONY : root/ProjectAlgorithms1/testpolygon.s
+root/ProjectAlgorithms1/jsontest2.s: root/ProjectAlgorithms1/jsontest2.cpp.s
+.PHONY : root/ProjectAlgorithms1/jsontest2.s
 
 # target to generate assembly for a file
-root/ProjectAlgorithms1/testpolygon.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/root/ProjectAlgorithms1/testpolygon.cpp.s
-.PHONY : root/ProjectAlgorithms1/testpolygon.cpp.s
+root/ProjectAlgorithms1/jsontest2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/root/ProjectAlgorithms1/jsontest2.cpp.s
+.PHONY : root/ProjectAlgorithms1/jsontest2.cpp.s
 
 # Help Target
 help:
@@ -339,9 +339,9 @@ help:
 	@echo "... qrc_Triangulation_2.o"
 	@echo "... qrc_Triangulation_2.i"
 	@echo "... qrc_Triangulation_2.s"
-	@echo "... root/ProjectAlgorithms1/testpolygon.o"
-	@echo "... root/ProjectAlgorithms1/testpolygon.i"
-	@echo "... root/ProjectAlgorithms1/testpolygon.s"
+	@echo "... root/ProjectAlgorithms1/jsontest2.o"
+	@echo "... root/ProjectAlgorithms1/jsontest2.i"
+	@echo "... root/ProjectAlgorithms1/jsontest2.s"
 .PHONY : help
 
 

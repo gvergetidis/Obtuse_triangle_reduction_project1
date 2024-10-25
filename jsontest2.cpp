@@ -737,8 +737,8 @@ int main(int argc, char* argv[]){
     // Add "edges" array of arrays
     boost::property_tree::ptree edges_node; //outer node
     for (const struct std::pair<int, int> e : edges) {
-        boost::property_tree::ptree edge_node; //inner node
-        
+        boost::property_tree::ptree edge_node; //inner node  
+
         boost::property_tree::ptree edge_val1_node; //first node of the edge
         edge_val1_node.put("", e.first);
         edge_node.push_back(std::make_pair("", edge_val1_node));
