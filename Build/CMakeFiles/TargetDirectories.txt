@@ -1,0 +1,6 @@
+/root/ProjectAlgorithms1/Build/CMakeFiles/CGAL_Qt5_moc_and_resources.dir
+/root/ProjectAlgorithms1/Build/CMakeFiles/ex.dir
+/root/ProjectAlgorithms1/Build/CMakeFiles/edit_cache.dir
+/root/ProjectAlgorithms1/Build/CMakeFiles/rebuild_cache.dir
+/root/ProjectAlgorithms1/Build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir
+/root/ProjectAlgorithms1/Build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir
