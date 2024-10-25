@@ -69,28 +69,28 @@ include CMakeFiles/ex.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ex.dir/flags.make
 
-CMakeFiles/ex.dir/jsontest2.cpp.o: CMakeFiles/ex.dir/flags.make
-CMakeFiles/ex.dir/jsontest2.cpp.o: jsontest2.cpp
-CMakeFiles/ex.dir/jsontest2.cpp.o: CMakeFiles/ex.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex.dir/jsontest2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ex.dir/jsontest2.cpp.o -MF CMakeFiles/ex.dir/jsontest2.cpp.o.d -o CMakeFiles/ex.dir/jsontest2.cpp.o -c /root/project1/ProjectAlgorithms1/jsontest2.cpp
+CMakeFiles/ex.dir/testpolygon.cpp.o: CMakeFiles/ex.dir/flags.make
+CMakeFiles/ex.dir/testpolygon.cpp.o: testpolygon.cpp
+CMakeFiles/ex.dir/testpolygon.cpp.o: CMakeFiles/ex.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/project1/ProjectAlgorithms1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex.dir/testpolygon.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ex.dir/testpolygon.cpp.o -MF CMakeFiles/ex.dir/testpolygon.cpp.o.d -o CMakeFiles/ex.dir/testpolygon.cpp.o -c /root/project1/ProjectAlgorithms1/testpolygon.cpp
 
-CMakeFiles/ex.dir/jsontest2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ex.dir/jsontest2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project1/ProjectAlgorithms1/jsontest2.cpp > CMakeFiles/ex.dir/jsontest2.cpp.i
+CMakeFiles/ex.dir/testpolygon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ex.dir/testpolygon.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project1/ProjectAlgorithms1/testpolygon.cpp > CMakeFiles/ex.dir/testpolygon.cpp.i
 
-CMakeFiles/ex.dir/jsontest2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ex.dir/jsontest2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project1/ProjectAlgorithms1/jsontest2.cpp -o CMakeFiles/ex.dir/jsontest2.cpp.s
+CMakeFiles/ex.dir/testpolygon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ex.dir/testpolygon.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project1/ProjectAlgorithms1/testpolygon.cpp -o CMakeFiles/ex.dir/testpolygon.cpp.s
 
 # Object files for target ex
 ex_OBJECTS = \
-"CMakeFiles/ex.dir/jsontest2.cpp.o"
+"CMakeFiles/ex.dir/testpolygon.cpp.o"
 
 # External object files for target ex
 ex_EXTERNAL_OBJECTS =
 
-/root/project1/ex: CMakeFiles/ex.dir/jsontest2.cpp.o
+/root/project1/ex: CMakeFiles/ex.dir/testpolygon.cpp.o
 /root/project1/ex: CMakeFiles/ex.dir/build.make
 /root/project1/ex: /usr/local/lib/libboost_json.so.1.86.0
 /root/project1/ex: libCGAL_Qt5_moc_and_resources.a

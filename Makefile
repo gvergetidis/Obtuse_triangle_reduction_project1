@@ -192,30 +192,6 @@ CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CGAL_Qt5_moc_and_resources.dir/build.make CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s
 .PHONY : CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.s
 
-jsontest2.o: jsontest2.cpp.o
-.PHONY : jsontest2.o
-
-# target to build an object file
-jsontest2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/jsontest2.cpp.o
-.PHONY : jsontest2.cpp.o
-
-jsontest2.i: jsontest2.cpp.i
-.PHONY : jsontest2.i
-
-# target to preprocess a source file
-jsontest2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/jsontest2.cpp.i
-.PHONY : jsontest2.cpp.i
-
-jsontest2.s: jsontest2.cpp.s
-.PHONY : jsontest2.s
-
-# target to generate assembly for a file
-jsontest2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/jsontest2.cpp.s
-.PHONY : jsontest2.cpp.s
-
 qrc_CGAL.o: qrc_CGAL.cpp.o
 .PHONY : qrc_CGAL.o
 
@@ -312,6 +288,30 @@ qrc_Triangulation_2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CGAL_Qt5_moc_and_resources.dir/build.make CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.s
 .PHONY : qrc_Triangulation_2.cpp.s
 
+testpolygon.o: testpolygon.cpp.o
+.PHONY : testpolygon.o
+
+# target to build an object file
+testpolygon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/testpolygon.cpp.o
+.PHONY : testpolygon.cpp.o
+
+testpolygon.i: testpolygon.cpp.i
+.PHONY : testpolygon.i
+
+# target to preprocess a source file
+testpolygon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/testpolygon.cpp.i
+.PHONY : testpolygon.cpp.i
+
+testpolygon.s: testpolygon.cpp.s
+.PHONY : testpolygon.s
+
+# target to generate assembly for a file
+testpolygon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/testpolygon.cpp.s
+.PHONY : testpolygon.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -327,9 +327,6 @@ help:
 	@echo "... CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.o"
 	@echo "... CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.i"
 	@echo "... CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.s"
-	@echo "... jsontest2.o"
-	@echo "... jsontest2.i"
-	@echo "... jsontest2.s"
 	@echo "... qrc_CGAL.o"
 	@echo "... qrc_CGAL.i"
 	@echo "... qrc_CGAL.s"
@@ -342,6 +339,9 @@ help:
 	@echo "... qrc_Triangulation_2.o"
 	@echo "... qrc_Triangulation_2.i"
 	@echo "... qrc_Triangulation_2.s"
+	@echo "... testpolygon.o"
+	@echo "... testpolygon.i"
+	@echo "... testpolygon.s"
 .PHONY : help
 
 
