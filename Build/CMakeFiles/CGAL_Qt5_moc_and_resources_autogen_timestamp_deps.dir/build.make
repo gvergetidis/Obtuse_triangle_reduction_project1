@@ -67,8 +67,8 @@ include CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/compile
 include CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
-CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
 CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so.5.15.13
+CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
 
 CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps
 CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir/build.make

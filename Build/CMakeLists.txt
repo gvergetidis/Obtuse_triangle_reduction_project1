@@ -25,6 +25,6 @@ find_package(Qt5 COMPONENTS Widgets OpenGL REQUIRED)
 
 add_definitions(-DCGAL_USE_BASIC_VIEWER)    #enable basic viewer 
 
-add_executable(ex ../jsontest2.cpp)
+add_executable(ex ../jsontest2.cpp ../CCDT_implementation.cpp)
 
-target_link_libraries(ex CGAL::CGAL_Qt5 Qt5::Widgets Qt5::Gui Qt5::Core CGAL::CGAL Boost::boost Boost::json) 
+target_link_libraries(ex CGAL::CGAL_Qt5 Qt5::Widgets Qt5::Gui Qt5::Core CGAL::CGAL Boost::boost Boost::json)

@@ -1,5 +1,6 @@
 CMakeFiles/ex.dir/root/ProjectAlgorithms1/jsontest2.cpp.o: \
  /root/ProjectAlgorithms1/jsontest2.cpp /usr/include/stdc-predef.h \
+ /root/ProjectAlgorithms1/CCDT.h \
  /usr/local/include/CGAL/Exact_predicates_exact_constructions_kernel.h \
  /usr/local/include/CGAL/Simple_cartesian.h \
  /usr/local/include/CGAL/Cartesian/Cartesian_base.h \
@@ -3067,5 +3068,6 @@ CMakeFiles/ex.dir/root/ProjectAlgorithms1/jsontest2.cpp.o: \
  /usr/local/include/boost/json/detail/value_to.hpp \
  /usr/local/include/boost/json/visit.hpp \
  /usr/local/include/boost/json/impl/visit.hpp \
- /root/ProjectAlgorithms1/CCDT.h \
- /usr/local/include/CGAL/Polygon_traits_2.h
+ /usr/local/include/CGAL/Polygon_traits_2.h \
+ /usr/local/include/CGAL/centroid.h \
+ /usr/local/include/CGAL/Kernel/Dimension_utils.h

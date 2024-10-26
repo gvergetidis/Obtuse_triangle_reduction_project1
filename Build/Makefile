@@ -288,6 +288,30 @@ qrc_Triangulation_2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CGAL_Qt5_moc_and_resources.dir/build.make CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.s
 .PHONY : qrc_Triangulation_2.cpp.s
 
+root/ProjectAlgorithms1/CCDT_implementation.o: root/ProjectAlgorithms1/CCDT_implementation.cpp.o
+.PHONY : root/ProjectAlgorithms1/CCDT_implementation.o
+
+# target to build an object file
+root/ProjectAlgorithms1/CCDT_implementation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/root/ProjectAlgorithms1/CCDT_implementation.cpp.o
+.PHONY : root/ProjectAlgorithms1/CCDT_implementation.cpp.o
+
+root/ProjectAlgorithms1/CCDT_implementation.i: root/ProjectAlgorithms1/CCDT_implementation.cpp.i
+.PHONY : root/ProjectAlgorithms1/CCDT_implementation.i
+
+# target to preprocess a source file
+root/ProjectAlgorithms1/CCDT_implementation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/root/ProjectAlgorithms1/CCDT_implementation.cpp.i
+.PHONY : root/ProjectAlgorithms1/CCDT_implementation.cpp.i
+
+root/ProjectAlgorithms1/CCDT_implementation.s: root/ProjectAlgorithms1/CCDT_implementation.cpp.s
+.PHONY : root/ProjectAlgorithms1/CCDT_implementation.s
+
+# target to generate assembly for a file
+root/ProjectAlgorithms1/CCDT_implementation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex.dir/build.make CMakeFiles/ex.dir/root/ProjectAlgorithms1/CCDT_implementation.cpp.s
+.PHONY : root/ProjectAlgorithms1/CCDT_implementation.cpp.s
+
 root/ProjectAlgorithms1/jsontest2.o: root/ProjectAlgorithms1/jsontest2.cpp.o
 .PHONY : root/ProjectAlgorithms1/jsontest2.o
 
@@ -339,6 +363,9 @@ help:
 	@echo "... qrc_Triangulation_2.o"
 	@echo "... qrc_Triangulation_2.i"
 	@echo "... qrc_Triangulation_2.s"
+	@echo "... root/ProjectAlgorithms1/CCDT_implementation.o"
+	@echo "... root/ProjectAlgorithms1/CCDT_implementation.i"
+	@echo "... root/ProjectAlgorithms1/CCDT_implementation.s"
 	@echo "... root/ProjectAlgorithms1/jsontest2.o"
 	@echo "... root/ProjectAlgorithms1/jsontest2.i"
 	@echo "... root/ProjectAlgorithms1/jsontest2.s"

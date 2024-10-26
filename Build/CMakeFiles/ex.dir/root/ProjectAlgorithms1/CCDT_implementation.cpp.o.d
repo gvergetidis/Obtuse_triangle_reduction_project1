@@ -1,5 +1,6 @@
-CMakeFiles/ex.dir/root/ProjectAlgorithms1/testpolygon.cpp.o: \
- /root/ProjectAlgorithms1/testpolygon.cpp /usr/include/stdc-predef.h \
+CMakeFiles/ex.dir/root/ProjectAlgorithms1/CCDT_implementation.cpp.o: \
+ /root/ProjectAlgorithms1/CCDT_implementation.cpp \
+ /usr/include/stdc-predef.h /root/ProjectAlgorithms1/CCDT.h \
  /usr/local/include/CGAL/Exact_predicates_exact_constructions_kernel.h \
  /usr/local/include/CGAL/Simple_cartesian.h \
  /usr/local/include/CGAL/Cartesian/Cartesian_base.h \
@@ -2892,6 +2893,54 @@ CMakeFiles/ex.dir/root/ProjectAlgorithms1/testpolygon.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QSurfaceFormat \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QCoreApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h \
+ /usr/local/include/boost/property_tree/ptree.hpp \
+ /usr/local/include/boost/property_tree/ptree_fwd.hpp \
+ /usr/local/include/boost/property_tree/string_path.hpp \
+ /usr/local/include/boost/property_tree/id_translator.hpp \
+ /usr/local/include/boost/property_tree/exceptions.hpp \
+ /usr/local/include/boost/property_tree/detail/exception_implementation.hpp \
+ /usr/local/include/boost/property_tree/detail/ptree_utils.hpp \
+ /usr/local/include/boost/property_tree/stream_translator.hpp \
+ /usr/local/include/boost/optional/optional_io.hpp \
+ /usr/local/include/boost/multi_index/sequenced_index.hpp \
+ /usr/local/include/boost/bind/bind.hpp \
+ /usr/local/include/boost/bind/mem_fn.hpp \
+ /usr/local/include/boost/get_pointer.hpp \
+ /usr/local/include/boost/config/no_tr1/memory.hpp \
+ /usr/local/include/boost/bind/arg.hpp \
+ /usr/local/include/boost/is_placeholder.hpp \
+ /usr/local/include/boost/bind/std_placeholders.hpp \
+ /usr/local/include/boost/bind/detail/result_traits.hpp \
+ /usr/local/include/boost/bind/detail/tuple_for_each.hpp \
+ /usr/local/include/boost/bind/detail/integer_sequence.hpp \
+ /usr/local/include/boost/visit_each.hpp \
+ /usr/local/include/boost/bind/detail/bind_cc.hpp \
+ /usr/local/include/boost/bind/detail/bind_mf_cc.hpp \
+ /usr/local/include/boost/bind/detail/bind_mf2_cc.hpp \
+ /usr/local/include/boost/bind/placeholders.hpp \
+ /usr/local/include/boost/multi_index/detail/bidir_node_iterator.hpp \
+ /usr/local/include/boost/multi_index/detail/seq_index_node.hpp \
+ /usr/local/include/boost/multi_index/detail/seq_index_ops.hpp \
+ /usr/local/include/boost/multi_index/sequenced_index_fwd.hpp \
+ /usr/local/include/boost/multi_index/ordered_index.hpp \
+ /usr/local/include/boost/multi_index/detail/ord_index_impl.hpp \
+ /usr/local/include/boost/multi_index/detail/ord_index_node.hpp \
+ /usr/local/include/boost/multi_index/detail/uintptr_type.hpp \
+ /usr/local/include/boost/multi_index/detail/ord_index_ops.hpp \
+ /usr/local/include/boost/multi_index/detail/unbounded.hpp \
+ /usr/local/include/boost/multi_index/detail/value_compare.hpp \
+ /usr/local/include/boost/multi_index/detail/duplicates_iterator.hpp \
+ /usr/local/include/boost/property_tree/detail/ptree_implementation.hpp \
+ /usr/local/include/boost/core/type_name.hpp \
+ /usr/local/include/boost/property_tree/json_parser.hpp \
+ /usr/local/include/boost/property_tree/json_parser/error.hpp \
+ /usr/local/include/boost/property_tree/detail/file_parser_error.hpp \
+ /usr/local/include/boost/property_tree/json_parser/detail/read.hpp \
+ /usr/local/include/boost/property_tree/json_parser/detail/parser.hpp \
+ /usr/local/include/boost/property_tree/json_parser/detail/narrow_encoding.hpp \
+ /usr/local/include/boost/property_tree/json_parser/detail/wide_encoding.hpp \
+ /usr/local/include/boost/property_tree/json_parser/detail/standard_callbacks.hpp \
+ /usr/local/include/boost/property_tree/json_parser/detail/write.hpp \
  /usr/local/include/boost/json.hpp \
  /usr/local/include/boost/json/detail/config.hpp \
  /usr/local/include/boost/json/array.hpp \
@@ -3019,6 +3068,6 @@ CMakeFiles/ex.dir/root/ProjectAlgorithms1/testpolygon.cpp.o: \
  /usr/local/include/boost/json/detail/value_to.hpp \
  /usr/local/include/boost/json/visit.hpp \
  /usr/local/include/boost/json/impl/visit.hpp \
- /root/ProjectAlgorithms1/CCDT.h /usr/local/include/CGAL/centroid.h \
- /usr/local/include/CGAL/Kernel/Dimension_utils.h \
- /usr/local/include/CGAL/Polygon_traits_2.h
+ /usr/local/include/CGAL/Polygon_traits_2.h \
+ /usr/local/include/CGAL/centroid.h \
+ /usr/local/include/CGAL/Kernel/Dimension_utils.h
