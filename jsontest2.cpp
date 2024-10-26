@@ -1,7 +1,6 @@
 //#include "header.h"
 #include "CCDT.h"
 #include <gmp.h>
-
 int obtuse_count(CDT cdt){
     int c2=0;
     Face_iterator it = cdt.finite_faces_begin();
@@ -15,6 +14,9 @@ int obtuse_count(CDT cdt){
     }
     return c2;
 }
+
+
+
 
 int main(int argc, char* argv[]){
     //---------------INPUT---------------------------------------------------------------
@@ -135,28 +137,17 @@ int main(int argc, char* argv[]){
 
     //--------------------Create cdt---------------------------------------
     CDT cdt;
-    std::vector<Point> startpoints ={};
     for(const Point& p :points){
         cdt.insert(p);
-        startpoints.push_back(p);
     }
-    for(const auto& constraint:constraints){
-        cdt.insert_constraint(points[constraint.first], points[constraint.second]);
-    }
+    // for(const auto& constraint:constraints){
+    //     cdt.insert_constraint(points[constraint.first], points[constraint.second]);
+    // }
 
 
-    for(const auto& e : RB_edges) cdt.insert_constraint(points[e.first],points[e.second]);
+    // for(const auto& e : RB_edges) cdt.insert_constraint(points[e.first],points[e.second]);
     for(const auto& p : rbpoints) cdt.region_boundary.push_back(p);
     CGAL::draw(cdt);
-
-
-    // if(cdt.point_in_region_boundary(Point(192,520))) std::cout<<"in region boundary\n";
-    // else std::cout<<"not in region boundary\n";
-    // CDT cdt5 = CDT(cdt);
-    // CGAL::draw(cdt5);
-    // if(cdt5.point_in_region_boundary(Point(192,520))) std::cout<<"in region boundary\n";
-    // else std::cout<<"not in region boundary\n";
-
 
     Face_iterator it = cdt.faces_begin();
     Face_iterator beyond = cdt.faces_end();
@@ -170,126 +161,131 @@ int main(int argc, char* argv[]){
     std::vector<std::string> steinerx = {};
     std::vector<std::string> steinery = {};
 
-
-    
-    int c1=obtuse_count(cdt);
-    std::cout <<"Before" << c1 << std::endl;
-
-    //Edge flips
-    //terate through finite edges and flip if possible
-    
-    //-----------TESTING REG BOUNDRY--------------------------
-    // std::cout<< in_regionboundry(rbpoints , Point(100,70))<<std::endl;
-    // std::cout<< in_regionboundry(rbpoints , Point(0,0))<<std::endl;
-    // std::cout<< in_regionboundry(rbpoints , Point(25,25))<<std::endl;
-
-
-    //---------------------------------Flipping--------------------------------
-    for(int k=0; k<1; k++){
-        for (auto e : cdt.finite_edges()) {
-            std::cout<<"-------------------------\n";
-            Edge edge = e;
-            // Get the two faces sharing this edge
-            Face_handle f1 = edge.first;
-            int index = edge.second;
-            Face_handle f2 = f1->neighbor(index);
-
-            // Check if the edge is internal (not on the boundary) and not constrained
-            Polygon_2 polygon;
-            Point p0 = f1->vertex(index)->point();
-            Point p1 = f1->vertex(CDT::ccw(index))->point();
-            Point p2 = f2->vertex(f2->index(f1))->point();
-            Point p3 = f1->vertex(CDT::cw(index))->point();
-
-            polygon.push_back(p0);
-            polygon.push_back(p1);
-            polygon.push_back(p2);
-            polygon.push_back(p3);
-
-            if(!polygon.is_convex()){
-                std::cout<<"The polygon is not convex"<<std::endl;
-                continue;
-            }
-            // Check if the polygon is convex
-            if (!cdt.is_constrained(edge)) {
-                // Ensure that the edge is internal
-                if (!cdt.is_infinite(f1) && !cdt.is_infinite(f2)) {
-                    // Perform the flip
-                    if(obtuse_face(f1)== true  || obtuse_face(f2)==true ){
-                        cdt.flip(f1, index);
-                        break;
-                    }
-                } else {
-                    std::cerr << "Edge is on the boundary, not flippable" << std::endl;
-                }
-            } else {
-                std::cerr << "Edge is constrained, not flippable" << std::endl;
-            }
-        }
-    }
-
-    c1=obtuse_count(cdt);
-    std::cout <<"After flip" << c1 << std::endl;
-
-    CGAL::draw(cdt);
-    return 0;
     CDT cdt2 = CDT(cdt);
     CDT cdt3 = CDT(cdt);
     CDT cdt4 = CDT(cdt);
 
-    //----------------------------Middle Point-------------------
-    int limit = 20;
-    for(int i=0; i<limit ;i++){
-        it = cdt.finite_faces_begin();
-        beyond = cdt.finite_faces_end();
-        std::vector<std::tuple<Face_handle, Face_handle,Edge,Point>> polyinfo = {};
-        while (it != beyond) {
-            bool obtuse = false;
-            face = *it;  // get face
-            Face_handle facep = it;
-            Point m;
-            if(obtuse_face(facep)){
-                m = get_middlepoint(facep);
-                cdt.insert_no_flip(m);
-                points.push_back(m);
-                break;
-            }
-            ++it;        // advance the iterator
-        }
-    }
-    int c2=obtuse_count(cdt);
+
+    int limit , c1 , c2;
+    c1=obtuse_count(cdt);
     std::cout <<"Before" << c1 << std::endl;
-    std::cout <<"After middle steiner "<< c2 << std::endl; 
-    CGAL::draw(cdt);
+
+
+    //---------------------------------Flipping--------------------------------
+    // for (auto e : cdt.finite_edges()) {
+    //     std::cout<<"-------------------------\n";
+    //     Edge edge = e;
+    //     // Get the two faces sharing this edge
+    //     Face_handle f1 = edge.first;
+    //     int index = edge.second;
+    //     Face_handle f2 = f1->neighbor(index);
+
+    //     // Check if the edge is internal (not on the boundary) and not constrained
+    //     Polygon_2 polygon;
+    //     Point p0 = f1->vertex(index)->point();
+    //     Point p1 = f1->vertex(CDT::ccw(index))->point();
+    //     Point p2 = f2->vertex(f2->index(f1))->point(); 
+    //     Point p3 = f1->vertex(CDT::cw(index))->point();
+
+    //     polygon.push_back(p0);
+    //     polygon.push_back(p1);
+    //     polygon.push_back(p2);
+    //     polygon.push_back(p3);
+
+    //     if(!polygon.is_convex()){
+    //         std::cout<<"The polygon is not convex"<<std::endl;
+    //         continue;
+    //     }
+    //     if(CGAL::collinear(p3,p0,p2) || CGAL::collinear(p1,p0,p2)){
+    //         std::cout<<"Collinear"<<std::endl;
+    //         continue;
+    //     }
+    //     // Check if the polygon is convex
+    //     if (!cdt.is_constrained(edge)) {
+    //         // Ensure that the edge is internal
+    //         if (!cdt.is_infinite(f1) && !cdt.is_infinite(f2)) {
+    //             // Perform the flip
+    //             if(obtuse_face(f1)== true  || obtuse_face(f2)==true ){
+    //                 std::cout << "Flipped" << std::endl;
+    //                 cdt.flip(f1, index);
+    //             }
+    //         }else {
+    //             std::cout << "Edge is on the boundary, not flippable" << std::endl;
+    //         }
+    //     } else {
+    //         std::cout << "Edge is constrained, not flippable" << std::endl;
+    //     }
+    // }
+
+    // c2=obtuse_count(cdt);
+    // std::cout <<"After flip" << c2 << std::endl;
+    // CGAL::draw(cdt);
+
+    
+
+    
+    //----------------------------Middle Point-------------------
+    // limit = 20;
+    // for(int i=0; i<limit ;i++){
+    //     it = cdt.finite_faces_begin();
+    //     beyond = cdt.finite_faces_end();
+    //     std::vector<std::tuple<Face_handle, Face_handle,Edge,Point>> polyinfo = {};
+    //     while (it != beyond) {
+    //         bool obtuse = false;
+    //         face = *it;  // get face
+    //         Face_handle facep = it;
+    //         Point m;
+    //         if(obtuse_face(facep)){
+    //             m = get_middlepoint(facep);
+    //             cdt.insert_no_flip(m);
+    //             points.push_back(m);
+    //             break;
+    //         }
+    //         ++it;        // advance the iterator
+    //     }
+    // }
+    // c2=obtuse_count(cdt);
+    // std::cout <<"Before" << c1 << std::endl;
+    // std::cout <<"After middle steiner "<< c2 << std::endl; 
+    // CGAL::draw(cdt);
     
     //-----------------------------Circum-center-Centroid------------------------------------------
-    c1=obtuse_count(cdt2);
-    limit = 20;
-    for(int i=0; i<limit ;i++){
-        it = cdt2.finite_faces_begin();
-        beyond = cdt2.finite_faces_end();
-        std::vector<std::tuple<Face_handle, Face_handle,Edge,Point>> polyinfo = {};
-        while (it != beyond) {
-            bool obtuse = false;
-            face = *it;  // get face
-            Face_handle facep = it;
-            Point ce;
-            if(obtuse_face(facep)){
-                ce = get_circumcenter_centroid(cdt, facep);
-                cdt2.insert_no_flip(ce);
-                points.push_back(ce);
-                break;
-            }
-            ++it;        // advance the iterator
-        }
-    }
-    c2=obtuse_count(cdt2);
-    std::cout <<"Before" << c1 << std::endl;
-    std::cout <<"After centroid/circumsenter steiner "<< c2 << std::endl; 
-    CGAL::draw(cdt2);
+    // c1=obtuse_count(cdt2);
+    // limit = 20;
+    // for(int i=0; i<limit ;i++){
+    //     it = cdt2.finite_faces_begin();
+    //     beyond = cdt2.finite_faces_end();
+    //     std::vector<std::tuple<Face_handle, Face_handle,Edge,Point>> polyinfo = {};
+    //     while (it != beyond) {
+    //         bool obtuse = false;
+    //         face = *it;  // get face
+    //         Face_handle facep = it;
+    //         Point ce;
+    //         if(obtuse_face(facep)){
+    //             ce = get_circumcenter_centroid(cdt, facep);
+    //             cdt2.insert_no_flip(ce);
+    //             points.push_back(ce);
+    //             break;
+    //         }
+    //         ++it;        // advance the iterator
+    //     }
+    // }
+    // c2=obtuse_count(cdt2);
+    // std::cout <<"Before" << c1 << std::endl;
+    // std::cout <<"After centroid/circumsenter steiner "<< c2 << std::endl; 
+    // CGAL::draw(cdt2);
 
    //-----------------------------Polygon--------------------------------------------------
-    
+    // c1=cdt3.obtuse_angles_count();
+    // limit = 10;
+    // for(int i=0; i<limit ;i++){
+    //     polygon_center(cdt3);
+    // }
+    // c2=cdt3.obtuse_angles_count();
+    // std::cout <<"Before" << c1 << std::endl;
+    // std::cout <<"After polygon steiner "<< c2 << std::endl; 
+    // CGAL::draw(cdt3);
+
     //-----------------------------Projection------------------------------------------------------
     c1=obtuse_count(cdt4);
     std::cout <<"CDT4"<<std::endl; 
@@ -304,14 +300,27 @@ int main(int argc, char* argv[]){
             face = *it;  // get face
             Face_handle facep = it;
             Point proj;
-            if(obtuse_face(facep)){
+            if(obtuse_face(facep)){  //PUT REG BOUNDRY
                 proj = get_projection(facep);
                 cdt4.insert_no_flip(proj);
                 points.push_back(proj);
+
                 std::pair<std::string, std::string> xpair = print_rational(proj.x());
                 std::pair<std::string, std::string> ypair = print_rational(proj.y());
-                steinerx.push_back(xpair.first + "/" + xpair.second);
-                steinery.push_back(ypair.first + "/" + ypair.second);
+
+                if(xpair.second == "1"){
+                    steinerx.push_back(xpair.first + "/end");
+                }else{
+                    steinerx.push_back(xpair.first + "/" + xpair.second);
+                }
+
+                if(ypair.second == "1"){
+                    steinery.push_back(ypair.first + "/end");
+                }else{
+                    std::cout<<ypair.first<<std::endl;
+                    steinery.push_back(ypair.first + "/" + ypair.second);
+                }
+                    
                 break;
             }
             ++it;        // advance the iterator
@@ -326,39 +335,6 @@ int main(int argc, char* argv[]){
 
 
     //EXPORTING--------------------------------------------------------
-    boost::property_tree::ptree root; //empty root of the tree
-
-    // Add "content_type" and "instance_uid"
-    root.put("content_type", "CG_SHOP_2025_Solution");
-    root.put("instance_uid", id); 
-    
-
-
-    boost::property_tree::ptree steinerx_nodes; //create a steiner points node
-    for (auto &x : steinerx){
-
-        pt::ptree steinerx_node;
-        steinerx_node.put("", x); //create a node of a steiner point
-
-        // Add this node to the list.
-        steinerx_nodes.push_back(std::make_pair("", steinerx_node)); //add this node to the steiner nodes
-    }
-    root.add_child("steiner_points_x", steinerx_nodes); //add to root
-
-
-    boost::property_tree::ptree steinery_nodes; //create a steiner points node
-    for (auto &y : steinery){
-
-        pt::ptree steinery_node;
-        std::cout<<y<<std::endl;
-        steinery_node.put("", y); //create a node of a steiner point
-
-        // Add this node to the list.
-        steinery_nodes.push_back(std::make_pair("", steinery_node)); //add this node to the steiner nodes
-    }
-    root.add_child("steiner_points_y", steinery_nodes); //add to root
-
-    
     std::vector<std::pair<int, int>> edges = {};
     for (const Edge& e : cdt.finite_edges()) {
         CDT::Face_handle face = e.first;
@@ -390,46 +366,52 @@ int main(int argc, char* argv[]){
         edges.push_back(std::make_pair(i1,i2));
     }
 
+    // Construct JSON object
+    json::object obj1;
+    obj1["content_type"] = "CG_SHOP_2025_Solution";
+    obj1["instance_uid"] = id;
 
-    // Add "edges" array of arrays
-    boost::property_tree::ptree edges_node; //outer node
-    for (const struct std::pair<int, int> e : edges) {
-        boost::property_tree::ptree edge_node; //inner node
-        
-        boost::property_tree::ptree edge_val1_node; //first node of the edge
-        edge_val1_node.put("", e.first);
-        edge_node.push_back(std::make_pair("", edge_val1_node));
 
-        boost::property_tree::ptree edge_val2_node; //second node of the edge
-        edge_val2_node.put("", e.second);
-        edge_node.push_back(std::make_pair("", edge_val2_node));
-        
-        edges_node.push_back(std::make_pair("", edge_node));
+    // Convert steiner_points_x and steiner_points_y to JSON arrays
+    json::array json_steiner_points_x, json_steiner_points_y;
+    for (const auto& x : steinerx){
+        if (x.find("/end") != std::string::npos) {
+            // Extract the part before "/1" and convert it to an integer
+            int number = std::stoi(x.substr(0, x.find("/")));
+            json_steiner_points_x.push_back(json::value(number));  // Add as integer
+        } else {
+            json_steiner_points_x.push_back(json::value(x));  // Add as string
+        }
     }
-    root.add_child("edges", edges_node);
-    
-    std::ostringstream oss;
-    boost::property_tree::write_json(oss, root, true);  // 'false' to avoid pretty-printing
-
-    // Get the JSON string from the string stream
-    std::string json_str = oss.str();
-
-    // OPTIONAL: Replace escaped forward slashes "\/" with "/"
-    size_t pos = 0;
-    while ((pos = json_str.find("\\/", pos)) != std::string::npos) {
-        json_str.replace(pos, 2, "/");
-        pos += 1;  // Move past the replaced character
+    for (const auto& y : steinery) {
+        if (y.find("/end") != std::string::npos) {
+            // Extract the part before "/1" and convert it to an integer
+            int number = std::stoi(y.substr(0, y.find("/")));
+            json_steiner_points_y.push_back(json::value(number));  // Add as integer
+        } else {
+            json_steiner_points_y.push_back(json::value(y));  // Add as string
+        }
     }
+    obj1["steiner_points_x"] = json_steiner_points_x;
+    obj1["steiner_points_y"] = json_steiner_points_y;
 
-    // Save JSON to a file
+    // Convert edges to JSON array of arrays
+    json::array json_edges;
+    for (const auto& edge : edges) {
+        json_edges.push_back({edge.first, edge.second});
+    }
+    obj1["edges"] = json_edges;
+
+    // Output the JSON object as a string
+    std::string json_str = json::serialize(obj1);
     std::ofstream fileout("out/output.json");
     if (fileout.is_open()) {
-        // boost::property_tree::write_json(fileout, root);
         fileout << json_str;
         fileout.close();
         std::cout << "JSON saved to output.json" << std::endl;
     } else {
         std::cerr << "Unable to open file for writing!" << std::endl;
     }
-
+    return 0;
+    
 }

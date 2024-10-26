@@ -1,5 +1,4 @@
 #include "CCDT.h"
-
 bool obtuse_face(Face_handle face){
     Point a = face->vertex(0)->point();
     Point b = face->vertex(1)->point();
@@ -74,11 +73,15 @@ std::pair<std::string, std::string> print_rational(const K::FT& coord) {
     mpz_clear(num);
     mpz_clear(den);
 
+
+    std::cout << "*******" << std::endl;
+    std::cout << result.first << std::endl;
+    std::cout << "*******" << std::endl;
     return result;
 }
 
 
-
+//function that given a face returns the projection 
 Point get_projection(Face_handle facep){
     int obtuseInd = get_obtuse_ind(facep);
     Point p1 = facep->vertex(obtuseInd)->point();
@@ -131,18 +134,16 @@ bool face_has_constraint(CDT cdt,Face_handle facep){
     return (cdt.is_constrained(e1) || cdt.is_constrained(e2) || cdt.is_constrained(e3));
 }
 
-void polygon_center(CDT cdt){   
+void polygon_center(CDT &cdt){   
     bool found = false;
     std::vector <Point> polv;  
     for(auto fit = cdt.finite_faces_begin(); fit != cdt.finite_faces_end(); ++fit){
-        if(obtuse_face(fit) && face_has_constraint(cdt , fit)){
-
+        if(obtuse_face(fit) && !face_has_constraint(cdt , fit)){
             Face_handle neigh0 = fit->neighbor(0);
 
             polv.push_back(fit->vertex(1)->point());
 
             if(obtuse_face(neigh0) && (!cdt.is_infinite(neigh0)) && !face_has_constraint(cdt , neigh0)){
-                std::cout<<"HI neig0"<<std::endl;
                 polv.push_back(neigh0->vertex(neigh0->index(fit))->point());
                 found = true;
             }
@@ -151,7 +152,6 @@ void polygon_center(CDT cdt){
 
             Face_handle neigh1 = fit->neighbor(1);
             if(obtuse_face(neigh1) && (!cdt.is_infinite(neigh1)) && !face_has_constraint(cdt , neigh1)){
-                std::cout<<"HI neig1"<<std::endl;
                 polv.push_back(neigh1->vertex(neigh1->index(fit))->point());
                 found = true;
 
@@ -161,7 +161,6 @@ void polygon_center(CDT cdt){
 
             Face_handle neigh2 = fit->neighbor(2);
             if(obtuse_face(neigh2) && (!cdt.is_infinite(neigh2)) && !face_has_constraint(cdt , neigh2)){
-                std::cout<<"HI neig2"<<std::endl;
                 polv.push_back(neigh2->vertex(neigh2->index(fit))->point());
                 found = true;
             }
@@ -180,22 +179,7 @@ void polygon_center(CDT cdt){
                     std::cout<<"("<<p.x()<<","<<p.y()<<") ";                        
 
                 }
-                std::cout<<std::endl;
-                       
-
-                        /*//remove duplicates
-                        for (auto it = pol.begin(); it != pol.end(); ++it) {
-                            auto next_it = it + 1;
-                            while (next_it != pol.end()) {
-                                if (*it == *next_it) {
-                                    next_it = pol.erase(next_it);
-                                    } else {
-                                        ++next_it;
-                                    }
-                                }
-                        }*/
-                  
-                
+                std::cout<<std::endl;              
                 for(auto p : polv) {
                     cdt.remove(cdt.insert(p));
                     std::cout<<"("<<p.x()<<","<<p.y()<<") ";                        
@@ -215,8 +199,6 @@ void polygon_center(CDT cdt){
                 }
 
                 for(int i=0; i<cons.size(); i++) cdt.insert_constraint(cons[i].first, cons[i].second);
-
-                CGAL::draw(cdt);
 
                 //remove the constraints that were inserted
                 for(int i=0; i<cons.size(); i++){

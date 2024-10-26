@@ -1,8 +1,6 @@
 #ifndef CGAL_CUSTOM_CONSTRAINED_DELAUNAY_TRIANGULATION_2_H
 #define CGAL_CUSTOM_CONSTRAINED_DELAUNAY_TRIANGULATION_2_H
 
-
-
 #include <CGAL/Exact_predicates_exact_constructions_kernel.h>
 #include <CGAL/Constrained_Delaunay_triangulation_2.h>
 #include <CGAL/draw_constrained_triangulation_2.h>
@@ -13,11 +11,9 @@
 #include <boost/json.hpp>
 
 #include <fstream>
-
 #include <utility>
 #include <string>
 #include <vector>
-
 
 #include <CGAL/Polygon_2.h>
 #include <CGAL/Polygon_traits_2.h>
@@ -27,8 +23,6 @@ typedef CGAL::Exact_predicates_exact_constructions_kernel K;
 typedef CGAL::Exact_predicates_tag Itag;
 typedef CGAL::Polygon_2<K> Polygon_2;
 typedef CGAL::Constrained_Delaunay_triangulation_2<K,CGAL::Default, Itag> CDT1;
-
-
 
 typedef CDT1::Point Point;
 typedef CDT1::Edge Edge;
@@ -125,4 +119,4 @@ typedef CCDT<K, CGAL::Default, Itag> CDT;
 
 
 Point get_circumcenter_centroid(CDT , Face_handle );
-void polygon_center(CDT);
+void polygon_center(CDT&);
