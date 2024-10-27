@@ -23,8 +23,8 @@ Github link: https://github.com/gvergetidis/ProjectAlgorithms1
 1. src: περιέχει τα αρχεία πηγαίου κώδικα triangulation.cpp , lib.cpp
 2. include: περιέχει το αρχείο επικεφαλίδας CCDT.h
 3. bin: περιέχει το εκτελέσιμο αρχείο triangulation 
-4. Build: περιέχει το αρχείο CMakeLists.txt, εκεί τοπόθετούνται τα αυτόματα παραγώμενα αρχεία του cmake καθώς και το Makefile
-5. out: τοπόθετείται το αρχείο εξόδου output.json
+4. Build: περιέχει το αρχείο CMakeLists.txt, εκεί τοποθετούνται τα αυτόματα παραγώμενα αρχεία του cmake καθώς και το Makefile
+5. out: τοποθετείται το αρχείο εξόδου output.json
 6. .git: βρίσκονται αρχεία σχετικα με το git
 7. test_instances: περιέχει δοσμένα τεστ
 8. test_instances: περιέχει δοσμένα τεστ
