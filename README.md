@@ -25,7 +25,7 @@ Github link: https://github.com/gvergetidis/ProjectAlgorithms1
 3. bin: περιέχει το εκτελέσιμο αρχείο triangulation 
 4. Build: περιέχει το αρχείο CMakeLists.txt, εκεί τοπόθετούνται τα αυτόματα παραγώμενα αρχεία του cmake καθώς και το Makefile
 5. out: τοπόθετείται το αρχείο εξόδου output.json
-6. .git: βρίσκονται αρχεία σχετιkα με το git
+6. .git: βρίσκονται αρχεία σχετικα με το git
 7. test_instances: περιέχει δοσμένα τεστ
 8. test_instances: περιέχει δοσμένα τεστ
 
