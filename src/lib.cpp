@@ -71,10 +71,6 @@ std::pair<std::string, std::string> print_rational(const K::FT& coord) {
     mpz_clear(num);
     mpz_clear(den);
 
-
-    std::cout << "*******" << std::endl;
-    std::cout << result.first << std::endl;
-    std::cout << "*******" << std::endl;
     return result;
 }
 
@@ -154,16 +150,17 @@ void polygon_center(CDT &cdt){
     bool found = false;                         //boolean variable that indicates if we found a polygon
     std::vector <Point> polv;                   //vector that stores the points of the polygon  
     for(auto fit = cdt.finite_faces_begin(); fit != cdt.finite_faces_end(); ++fit){     //iterate all the faces
-        if(obtuse_face(fit) && !face_has_constraint(cdt , fit)){  //search for obtuse faces and faces that dont have constraints
+        //search for obtuse faces and faces that dont have constraints and belongs in the region boundry
+        if(obtuse_face(fit) && !face_has_constraint(cdt , fit) && cdt.face_in_region_boundary(fit)){
             //try to form the poygon, by getting all the potential points of the obtuse face
-            //and its potential obtuse neighboors in counterclockwise order
+            //and its potential obtuse neighboors in counterclockwise order 
             //the way that we store the points forms a counterclockwise order of points
 
             polv.push_back(fit->vertex(1)->point());        //store this point
 
             Face_handle neigh0 = fit->neighbor(0);          //get the neighboor 0
-            //check if neighboor 0 is obtuse, finite and has not constraints
-            if(obtuse_face(neigh0) && (!cdt.is_infinite(neigh0)) && !face_has_constraint(cdt , neigh0)){
+            //check if neighboor 0 is obtuse, finite and has not constraints and belongs in the region boundry
+            if(obtuse_face(neigh0) && (!cdt.is_infinite(neigh0)) && !face_has_constraint(cdt , neigh0) && cdt.face_in_region_boundary(neigh0)){
                 //store the point of neighboor 0 that is opposite the initial obtuse face
                 polv.push_back(neigh0->vertex(neigh0->index(fit))->point());
                 found = true;                                    //indicate that a polygon is found and can be formed
@@ -172,8 +169,8 @@ void polygon_center(CDT &cdt){
             polv.push_back(fit->vertex(2)->point());            //store this point
 
             Face_handle neigh1 = fit->neighbor(1);              //get neighboor 1
-            //check if neighboor 1 is obtuse, finite and has not constraints
-            if(obtuse_face(neigh1) && (!cdt.is_infinite(neigh1)) && !face_has_constraint(cdt , neigh1)){
+            //check if neighboor 1 is obtuse, finite and has not constraints and belongs in the region boundry
+            if(obtuse_face(neigh1) && (!cdt.is_infinite(neigh1)) && !face_has_constraint(cdt , neigh1) && cdt.face_in_region_boundary(neigh1)){
                 //store the point of neighboor 1 that is opposite the initial obtuse face
                 polv.push_back(neigh1->vertex(neigh1->index(fit))->point());    
                 found = true;                                    //indicate that a polygon is found and can be formed
@@ -183,8 +180,8 @@ void polygon_center(CDT &cdt){
             polv.push_back(fit->vertex(0)->point());            //store this point
 
             Face_handle neigh2 = fit->neighbor(2);              //get neighboor 2
-            //check if neighboor 2 is obtuse, finite and has not constraints
-            if(obtuse_face(neigh2) && (!cdt.is_infinite(neigh2)) && !face_has_constraint(cdt , neigh2)){
+            //check if neighboor 2 is obtuse, finite and has not constraints and belongs in the region boundry
+            if(obtuse_face(neigh2) && (!cdt.is_infinite(neigh2)) && !face_has_constraint(cdt , neigh2) && cdt.face_in_region_boundary(neigh2)){
                 //store the point of neighboor 2 that is opposite the initial obtuse face
                 polv.push_back(neigh2->vertex(neigh2->index(fit))->point());
                 found = true;                                   //indicate that a polygon is found and can be formed
@@ -204,7 +201,6 @@ void polygon_center(CDT &cdt){
                 //remove the points of the polygon from cdt
                 for(auto p : polv){
                     cdt.remove(cdt.insert(p));
-                    std::cout<<"("<<p.x()<<","<<p.y()<<") ";                        
                 }
 
                 //compute the centroid of the polygon
@@ -213,11 +209,10 @@ void polygon_center(CDT &cdt){
 
                 std::vector<std::pair<Point,Point>> cons;       //vector to store the constraints between the polygon points
 
-                for (int i = 0; i < polv.size(); i++){          //create and store these constraints
+                for(int i = 0; i < polv.size(); i++){          //create and store these constraints
                     const Point& p1 = polv[i];                  //get a point
                     const Point& p2 = polv[(i+1) % polv.size()]; //get the next point (use mod to get the last constraint from last point to first point)  
-                    cons.push_back(std::make_pair(p1,p2));
-                            
+                    cons.push_back(std::make_pair(p1,p2));    
                 }
 
                 //insert the removed points as constraints 
@@ -236,12 +231,10 @@ void polygon_center(CDT &cdt){
                         if((p1 == cons[i].first && p2 == cons[i].second) || (p1 == cons[i].second && p2 == cons[i].first)){
                             cdt.remove_constraint(e.first,e.second);
                         }
-
                     }
                 }
             }
             else polv.clear();          //if the polygon is not found clear the polygon point vector and prepare for new search 
-
         }
         if(found) break;                //if a polygon was found and all the necessary steps were taken we we exit the loop
     }

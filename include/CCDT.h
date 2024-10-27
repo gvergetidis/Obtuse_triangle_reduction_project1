@@ -10,12 +10,9 @@
 #include <CGAL/Polygon_traits_2.h>
 #include <CGAL/centroid.h>
 
-#include <boost/property_tree/ptree.hpp>
-#include <boost/property_tree/json_parser.hpp>
 #include <boost/json.hpp>
 
 #include <fstream>
-//#include <utility>
 #include <string>
 #include <vector>
 #include <gmp.h>
@@ -40,17 +37,12 @@ typedef CGAL::Polygon_2<K> Polygon_2;
 
 //namespaces for json
 namespace json = boost::json;
-namespace pt = boost::property_tree;
 
-
-//prototypes of helpre functions 
+//prototypes of helper functions 
 bool obtuse_face(Face_handle);
-//int get_obtuse_ind(Face_handle);
 std::pair<std::string, std::string> print_rational(const K::FT& );
 Point get_projection(Face_handle);
 Point get_middlepoint(Face_handle);
-Point get_centroid(Face_handle);
-Point get_circumcenter(Face_handle);
 
 //this is the custom class called CCDT
 template <class Gt, class Tds = CGAL::Default, class Itag = CGAL::Default>
@@ -58,7 +50,7 @@ class CCDT
     : public CGAL::Constrained_Delaunay_triangulation_2<Gt, Tds, Itag> {
 public:
 
-    Polygon_2 region_boundary;                                  //polygon that refers to the region boundary of the triangulation(it contains the region boundary points) 
+    Polygon_2 region_boundary;  //polygon that refers to the region boundary of the triangulation(it contains the region boundary points) 
 
     using Base = CGAL::Constrained_Delaunay_triangulation_2<Gt, Tds, Itag>;
     using typename Base::Face_handle;
@@ -77,7 +69,7 @@ public:
     CCDT(InputIterator it, InputIterator last, const Gt& gt = Gt())
         : Base(it, last, gt) {}
 
-    //copy constructor that calls the base class copy consteuctor and the copies the region boundary
+    //copy constructor that calls the base class copy constructor and the copies the region boundary
     CCDT(const CCDT& cdt2) : CDT1(cdt2), region_boundary(cdt2.region_boundary) {}
 
     // New insert method without flips
@@ -105,8 +97,10 @@ public:
         Point p0 = f->vertex(0)->point();
         Point p1 = f->vertex(1)->point();
         Point p2 = f->vertex(2)->point();
-        //check if all the points are in the region boundary
-        return (point_in_region_boundary(p0) && point_in_region_boundary(p1) && point_in_region_boundary(p2));
+        Point ce = CGAL::centroid(p0,p1,p2);
+
+        //check if all the points and the centroid of the face are in the region boundary 
+        return (point_in_region_boundary(p0) && point_in_region_boundary(p1) && point_in_region_boundary(p2) && point_in_region_boundary(ce));
     }
 
     //method that computes the number of obtuse angles in CDT

@@ -1,5 +1,0 @@
-/home/ekorovesis/ProjectAlgorithms1/Build/CMakeFiles/CGAL_Qt5_moc_and_resources.dir
-/home/ekorovesis/ProjectAlgorithms1/Build/CMakeFiles/triangulation.dir
-/home/ekorovesis/ProjectAlgorithms1/Build/CMakeFiles/edit_cache.dir
-/home/ekorovesis/ProjectAlgorithms1/Build/CMakeFiles/rebuild_cache.dir
-/home/ekorovesis/ProjectAlgorithms1/Build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir
