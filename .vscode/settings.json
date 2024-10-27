@@ -75,5 +75,6 @@
         "variant": "cpp",
         "shared_mutex": "cpp",
         "regex": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/ekorovesis/ProjectAlgorithms1/Build"
 }

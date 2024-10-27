@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "/root/ProjectAlgorithms1/ex"
-  "/root/ProjectAlgorithms1/ex.pdb"
-  "CMakeFiles/ex.dir/root/ProjectAlgorithms1/CCDT_implementation.cpp.o"
-  "CMakeFiles/ex.dir/root/ProjectAlgorithms1/CCDT_implementation.cpp.o.d"
-  "CMakeFiles/ex.dir/root/ProjectAlgorithms1/jsontest2.cpp.o"
-  "CMakeFiles/ex.dir/root/ProjectAlgorithms1/jsontest2.cpp.o.d"
+  "/home/ekorovesis/ProjectAlgorithms1/ex"
+  "/home/ekorovesis/ProjectAlgorithms1/ex.pdb"
+  "CMakeFiles/ex.dir/home/ekorovesis/ProjectAlgorithms1/src/lib.cpp.o"
+  "CMakeFiles/ex.dir/home/ekorovesis/ProjectAlgorithms1/src/lib.cpp.o.d"
+  "CMakeFiles/ex.dir/home/ekorovesis/ProjectAlgorithms1/src/triangulation.cpp.o"
+  "CMakeFiles/ex.dir/home/ekorovesis/ProjectAlgorithms1/src/triangulation.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

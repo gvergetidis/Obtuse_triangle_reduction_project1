@@ -8,16 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/ProjectAlgorithms1/CCDT_implementation.cpp" "CMakeFiles/ex.dir/root/ProjectAlgorithms1/CCDT_implementation.cpp.o" "gcc" "CMakeFiles/ex.dir/root/ProjectAlgorithms1/CCDT_implementation.cpp.o.d"
-  "/root/ProjectAlgorithms1/jsontest2.cpp" "CMakeFiles/ex.dir/root/ProjectAlgorithms1/jsontest2.cpp.o" "gcc" "CMakeFiles/ex.dir/root/ProjectAlgorithms1/jsontest2.cpp.o.d"
+  "/home/ekorovesis/ProjectAlgorithms1/src/lib.cpp" "CMakeFiles/ex.dir/home/ekorovesis/ProjectAlgorithms1/src/lib.cpp.o" "gcc" "CMakeFiles/ex.dir/home/ekorovesis/ProjectAlgorithms1/src/lib.cpp.o.d"
+  "/home/ekorovesis/ProjectAlgorithms1/src/triangulation.cpp" "CMakeFiles/ex.dir/home/ekorovesis/ProjectAlgorithms1/src/triangulation.cpp.o" "gcc" "CMakeFiles/ex.dir/home/ekorovesis/ProjectAlgorithms1/src/triangulation.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/ekorovesis/ProjectAlgorithms1/Build/CMakeFiles/CGAL_Qt5_moc_and_resources.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

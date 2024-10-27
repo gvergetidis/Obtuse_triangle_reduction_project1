@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp"
-  "CGAL_Qt5_moc_and_resources_autogen/timestamp"
   "CMakeFiles/CGAL_Qt5_moc_and_resources_autogen"
 )
 
