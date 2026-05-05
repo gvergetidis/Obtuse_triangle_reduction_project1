@@ -9,8 +9,6 @@ Members:
 - Tagiar Korovesi, 1115202100068
 - Giorgos Vergetidis, 1115202100014
 
-Repository: <https://github.com/gvergetidis/ProjectAlgorithms1>
-
 ## Overview
 
 This project implements a constrained Delaunay triangulation workflow for CG:SHOP-style JSON instances. It reads a geometric instance from a JSON file, constructs a constrained Delaunay triangulation with CGAL, applies local improvement techniques to reduce obtuse triangles inside the region boundary, and exports a solution JSON containing Steiner points and triangulation edges.
